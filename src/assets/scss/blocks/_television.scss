@@ -1,0 +1,29 @@
+.television {
+
+    &.--black {
+        background: #F6F6F6;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+        @include breakpoint($xl-bp) {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    }
+}
+
+.television__arrow-container {
+    display: none;
+    margin-top: 3rem;
+
+
+    @include breakpoint($sm-bp) {
+        display: flex;
+    }
+
+    .main__about-company-arrows {
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 1.5rem;
+    }
+}

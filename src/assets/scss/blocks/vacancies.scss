@@ -1,0 +1,115 @@
+.vacancies__item {
+    border-radius: 1rem;
+    border: 0.1rem solid var(--gray);
+    padding: 2rem;
+
+    h3 {
+        color: var(--black);
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.036rem;
+
+        @include breakpoint($sm-bp) {
+            color: var(--black);
+            font-size: 3.2rem;
+            font-weight: 500;
+            letter-spacing: 0.032rem;
+        }
+    }
+}
+
+.vacancies__item-content {
+    display: flex;
+    gap: 5.5rem;
+    margin-top: 5rem;
+
+    @include breakpoint($xl-bp) {
+        gap: 1.5rem;
+    }
+
+
+    @include breakpoint($sm-bp) {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &:first-of-type {
+        margin-top: 3rem;
+
+        @include breakpoint($sm-bp) {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.vacancies__item-inner {
+    width: 48.6rem;
+
+    @include breakpoint($sm-bp) {
+        width: 100%;
+    }
+
+    p {
+        color: var(--black);
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: normal;
+
+        @include breakpoint($sm-bp) {
+            font-size: 1.8rem;
+        }
+    }
+
+    ul {
+        margin-top: 2rem;
+        padding-left: 2.3rem;
+
+        @include breakpoint($sm-bp) {
+            margin-top: 1rem;
+        }
+
+        li {
+            color: var(--black);
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: normal;
+            list-style-type: disc;
+
+            @include breakpoint($sm-bp) {
+                font-size: 1.6rem;
+            }
+        }
+
+
+    }
+
+    &:last-child {
+        ul {
+            padding-left: 0rem;
+
+            li {
+                list-style-type: none;
+                font-weight: 500;
+
+                span {
+                    font-weight: 700;
+                }
+
+                &:last-child {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.vacancies__border-line {
+    width: 0.1rem;
+    background: var(--gray);
+
+    @include breakpoint($sm-bp) {
+        width: 100%;
+        height: 0.1rem;
+    }
+}

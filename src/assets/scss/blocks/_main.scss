@@ -1,0 +1,1364 @@
+.main__title-block {
+    position: relative;
+    padding-top: 16.8rem;
+    padding-bottom: 10.8rem;
+
+    @include breakpoint($lb-bp) {
+        padding-top: 11.8rem;
+        padding-bottom: 4.3rem;
+    }
+
+    h1 {
+        min-height: 32rem;
+
+        @include breakpoint($xl-bp) {
+            min-height: unset;
+        }
+
+    }
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.1rem;
+    height: 5rem;
+    background-color: var(--white);
+    animation: blinking-cursor 1s infinite;
+    margin-left: 0.2rem;
+}
+
+@keyframes blinking-cursor {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.main__title-block_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 122.8rem;
+    margin: 0 auto;
+
+    @include breakpoint($sm-bp) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    h1 {
+        color: var(--white);
+        text-align: center;
+        font-size: 8.6rem;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.172rem;
+
+        @include breakpoint($sm-bp) {
+            font-size: 3.2rem;
+        }
+    }
+}
+
+.main__title-block-bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.main__description-block {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    @include breakpoint($sm-bp) {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    a {
+        @include breakpoint($sm-bp) {
+            width: 100%;
+        }
+    }
+
+    a:first-child {
+        @include breakpoint($sm-bp) {
+            font-size: 1.4rem;
+        }
+
+        svg {
+            @include breakpoint($sm-bp) {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+    }
+}
+
+.main__add-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    background: #504E4D;
+    padding: 2.8rem;
+    width: 100%;
+
+    @include breakpoint($sm-bp) {
+        padding: 2rem;
+    }
+}
+
+.main__add-block-content {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint($sm-bp) {
+        flex-direction: column;
+    }
+
+    h2 {
+        color: var(--white);
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.064rem;
+        width: 43.5rem;
+
+        @include breakpoint($sm-bp) {
+            font-size: 2rem;
+            letter-spacing: 0.04rem;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    svg {
+        width: 21.15rem;
+        height: 2.6rem;
+        margin-top: auto;
+
+        @include breakpoint($sm-bp) {
+            display: none;
+        }
+    }
+
+    a {
+        @include breakpoint($sm-bp) {
+            margin-top: 2rem;
+            width: 100%;
+        }
+    }
+}
+
+.main-add-block-img {
+    width: 23.4rem;
+    height: 6rem;
+
+    @include breakpoint($sm-bp) {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.main__title-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    width: 100%;
+
+    @include breakpoint($sm-bp) {
+        flex-direction: column-reverse;
+        padding: 0rem;
+        gap: 1.5rem;
+    }
+
+    a {
+        @include breakpoint($sm-bp) {
+            font-size: 1.4rem;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.main__catalog {
+
+    a {
+        margin-top: 4rem;
+        margin-left: auto;
+    }
+
+    ul {
+        // margin-top: 6rem;
+
+        // @include breakpoint($sm-bp) {
+        //     margin-top: 4rem;
+        // }
+
+        li {
+            padding: 2rem;
+            border-top: 0.1rem solid var(--gray);
+            transition: scale 0.2s;
+
+            opacity: 0;
+            transform: translateY(2rem);
+
+            @include breakpoint($xl-bp) {
+                opacity: 1;
+                transform: translateY(0rem);
+            }
+
+            &:hover {
+                scale: 1.01;
+            }
+
+            &:last-child {
+                border-bottom: 0.1rem solid var(--gray);
+            }
+
+            a {
+                margin-top: 0rem;
+            }
+
+            p {
+                color: var(--black);
+                font-size: 2.4rem;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.024rem;
+
+                @include breakpoint($sm-bp) {
+                    font-size: 1.8rem;
+                    letter-spacing: 0.018rem;
+                }
+            }
+
+            div {
+                margin-top: 2rem;
+                display: flex;
+                gap: 5.6rem;
+
+                @include breakpoint($sm-bp) {
+                    margin-top: 1.5rem;
+                }
+
+                p {
+                    color: var(--mediumGray);
+                    font-size: 1.8rem;
+
+                    @include breakpoint($sm-bp) {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .button {
+        @include breakpoint($sm-bp) {
+            width: 100%;
+        }
+    }
+}
+
+.main__about-company {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+    @include breakpoint($xl-bp) {
+        flex-direction: column;
+    }
+
+    @include breakpoint($sm-bp) {
+        gap: 4rem;
+    }
+
+    &.--about-us-modify {
+        @include breakpoint($sm-bp) {
+            gap: 2rem;
+        }
+    }
+
+    &.--television-modify {
+        gap: 16.6rem;
+
+        @include breakpoint($xl-bp) {
+            gap: 4rem;
+        }
+
+
+
+        .main__about-company-right {
+            width: 58%;
+
+            @include breakpoint($xl-bp) {
+                width: 100%;
+            }
+        }
+
+        .main__about-company-description {
+
+            @include breakpoint($xl-bp) {
+                margin-top: 4rem;
+            }
+        }
+
+        a {
+            @include breakpoint($xl-bp) {
+                margin-top: 4rem;
+            }
+        }
+
+        .main__about-company-arrows {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+}
+
+.television__video-title {
+    margin-top: 4rem;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+
+    @include breakpoint($sm-bp) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    p {
+        &:first-child {
+            color: var(--lightYellow);
+            font-size: 4.2rem;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 0.042rem;
+        }
+
+        &:last-child {
+            color: var(--black);
+            font-size: 3.6rem;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.036rem;
+
+            @include breakpoint($sm-bp) {
+                font-size: 3.6rem;
+                letter-spacing: 0.032rem;
+            }
+        }
+    }
+}
+
+.main__about-company-left {
+    width: 56rem;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint($cos-bp) {
+        width: 51rem;
+    }
+
+    @include breakpoint($xl-bp) {
+        width: 100%;
+    }
+
+    a {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .button {
+        @include breakpoint($sm-bp) {
+            width: 100%;
+        }
+
+    }
+
+    ul {
+        li {
+            color: var(--black);
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 160%;
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+.main__videos-navigation {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+
+    @include breakpoint($xl-bp) {
+        display: none;
+    }
+
+    .main__about-company-arrows {
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
+
+    &.--mobile {
+        display: none;
+
+        @include breakpoint($xl-bp) {
+            display: flex;
+            margin-top: 2rem;
+            justify-content: space-between;
+            gap: 0rem;
+        }
+
+        @include breakpoint($sm-bp) {
+            margin-top: 0rem;
+        }
+    }
+
+    &.--television-modify {
+        .main__about-company-arrows {
+            justify-content: unset;
+        }
+    }
+}
+
+.main__videos-pagination,
+.main__videos-pagination-mob {
+    display: flex;
+    gap: 1rem;
+    width: fit-content !important;
+
+    .swiper-pagination-bullet {
+        width: 2rem;
+        height: 0.5rem;
+        background: var(--gray);
+        border-radius: 2rem;
+        opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+        transition: all 0.2s;
+
+        &.swiper-pagination-bullet-active {
+            width: 6rem;
+            background: var(--blue);
+        }
+    }
+}
+
+.main__about-company-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @include breakpoint($xl-bp) {
+        display: none;
+    }
+
+
+    &.--mobile {
+        display: none;
+        margin-top: 3rem;
+
+        @include breakpoint($xl-bp) {
+            display: flex;
+        }
+    }
+
+    &.--block {
+        @include breakpoint($xl-bp) {
+            display: flex;
+        }
+    }
+
+
+    p {
+        color: var(--black);
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: normal;
+
+        @include breakpoint($sm-bp) {
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+
+    }
+}
+
+.main__about-company-right {
+    width: 114rem;
+
+    @include breakpoint($cos-bp) {
+        width: 74rem;
+    }
+
+    @include breakpoint($xl-bp) {
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        gap: 2rem;
+        margin-top: 2rem;
+
+        @include breakpoint($cos-bp) {
+            flex-wrap: wrap;
+        }
+
+        @include breakpoint($xl-bp) {
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+        }
+
+        li {
+            padding: 2rem;
+            border-radius: 2rem;
+            background: var(--lightYellow);
+            position: relative;
+            width: 27rem;
+            height: 13.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            opacity: 0;
+            transform: translateX(4rem);
+
+            @include breakpoint($cos-bp) {
+                width: 36rem;
+            }
+
+            @include breakpoint($xl-bp) {
+                opacity: 1;
+                transform: translateX(0rem);
+            }
+
+            @include breakpoint($sm-bp) {
+                width: max-content;
+            }
+
+            svg {
+                position: absolute;
+                width: 12.7rem;
+                height: 12.7rem;
+                right: 0rem;
+                top: 0rem;
+                z-index: 0;
+            }
+
+            p {
+                position: relative;
+                z-index: 1;
+                color: var(--black);
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: normal;
+
+                @include breakpoint($sm-bp) {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    width: 23rem;
+                }
+            }
+
+        }
+    }
+
+    .main__videos-video-container {
+        position: relative;
+    }
+
+    .video-preview {
+        position: relative;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        // .play-button {
+        //     position: absolute;
+        //     top: 54%;
+        //     left: 48%;
+        //     transform: translate(-50%, -50%);
+        //     width: 0;
+        //     height: 0;
+        //     border-left: 4rem solid transparent;
+        //     border-right: 4rem solid transparent;
+        //     border-top: 6rem solid var(--white);
+        //     rotate: 35deg;
+        // }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8.6rem;
+            height: 8.6rem;
+            background-color: transparent;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            &::before {
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 2.5rem solid transparent;
+                border-right: 2.5rem solid transparent;
+                border-top: 4.5rem solid var(--white);
+                transform: rotate(270deg) translateY(20%);
+            }
+
+            &.--television-modify {
+                background-color: var(--blue);
+
+                &::before {
+                    border-left: 1.5rem solid transparent;
+                    border-right: 1.5rem solid transparent;
+                    border-top: 2.5rem solid var(--white);
+                }
+            }
+        }
+
+
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+
+    .main__about-company-img-container {
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+
+        div {
+            overflow: hidden;
+            border-radius: 2rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &:last-child {
+                @include breakpoint($sm-bp) {
+                    display: none;
+                }
+            }
+        }
+
+        &.--about-us-modify {
+            div {
+
+                &:last-child {
+                    @include breakpoint($sm-bp) {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+.main__about-company-swiper {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2rem;
+    }
+}
+
+.main__about-company-arrows-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+
+    @include breakpoint($xl-bp) {
+        display: none;
+    }
+}
+
+.main__about-company-arrows {
+    // margin-left: auto;
+    width: fit-content;
+    // margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    // @include breakpoint($sm-bp) {
+    //     display: none;
+    // }
+
+    button {
+        border: none;
+        width: 3.2rem;
+        height: 1.2rem;
+        background: none;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        &:last-child {
+            rotate: 180deg;
+        }
+    }
+}
+
+.main__sertificate-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .main__about-company-arrows {
+        @include breakpoint($sm-bp) {
+            display: none;
+        }
+    }
+}
+
+.main__sertificate-swiper {
+
+    a {
+        transition: scale 0.2s;
+
+        &:hover {
+            scale: 1.01;
+        }
+    }
+
+    .swiper-img {
+        overflow: hidden;
+        border: 0.1rem solid var(--lightGray);
+        border-radius: 2rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+}
+
+.main__advantages {
+
+    h3 {
+        color: var(--black);
+        font-size: 4.8rem;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.048rem;
+    }
+
+    ul {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+
+        li {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            width: 41rem;
+
+            // opacity: 0;
+            transform: rotate(0deg);
+
+            @include breakpoint($cos-bp) {
+                width: 40rem;
+            }
+
+            @include breakpoint($xl-bp) {
+                width: 100%;
+            }
+
+            @include breakpoint($sm-bp) {
+                gap: 0.8rem;
+            }
+
+            p {
+                color: var(--black);
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: normal;
+
+                @include breakpoint($sm-bp) {
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                }
+
+                &:first-child {
+                    color: var(--lightYellow);
+                    font-size: 4.2rem;
+                    font-weight: 800;
+                    line-height: normal;
+                    letter-spacing: 0.042rem;
+
+                    @include breakpoint($sm-bp) {
+                        font-size: 3.8rem;
+                        letter-spacing: 0.038rem;
+                    }
+                }
+
+                &:nth-child(2) {
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.024rem;
+
+                    @include breakpoint($sm-bp) {
+                        letter-spacing: 0.018rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    h3 {
+        font-size: 3.6rem;
+        line-height: normal;
+        letter-spacing: 0.036rem;
+    }
+}
+
+.main__price-list {
+    ul {
+        display: flex;
+        column-gap: 2rem;
+        row-gap: 4rem;
+        flex-wrap: wrap;
+
+        @include breakpoint($sm-bp) {
+            gap: 1.5rem;
+        }
+
+        li {
+            width: 41rem;
+
+            @include breakpoint($cos-bp) {
+                width: 40rem;
+            }
+
+            @include breakpoint($xl-bp) {
+                width: 100%;
+                padding: 2rem;
+            }
+
+            p {
+                color: var(--black);
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: normal;
+
+                &:first-child {
+                    font-family: Mulish;
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    letter-spacing: 0.024rem;
+
+                    @include breakpoint($xl-bp) {
+                        width: 100%;
+                        padding: 2rem;
+                    }
+
+                    @include breakpoint($sm-bp) {
+                        font-size: 1.8rem;
+                        letter-spacing: 0.018rem;
+                        padding: 0;
+                    }
+                }
+
+                &:nth-child(2) {
+                    margin-top: 2rem;
+
+                    @include breakpoint($sm-bp) {
+                        margin-top: 1.5rem;
+                        font-size: 1.6rem;
+                        line-height: 2rem;
+                    }
+                }
+
+                &:last-child {
+                    color: var(--blue);
+                    text-align: right;
+                    font-size: 3.6rem;
+                    font-weight: 700;
+                    letter-spacing: 0.036rem;
+                    margin-top: 4.4rem;
+
+                    @include breakpoint($sm-bp) {
+                        font-size: 3rem;
+                        letter-spacing: 0.03rem;
+                        margin-top: 6.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main__stages {
+
+    ul {
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        li {
+            position: relative;
+            width: 84rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 2rem 2rem 7.2rem;
+
+            @include breakpoint($cos-bp) {
+                width: 61rem;
+            }
+
+            @include breakpoint($xl-bp) {
+                width: 100%;
+            }
+
+            @include breakpoint($sm-bp) {
+                padding: 2rem;
+            }
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+
+                color: var(--blue);
+                font-size: 9rem;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: 0.09rem;
+                opacity: 0.1;
+
+                @include breakpoint($sm-bp) {
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+
+            }
+
+            div {
+
+                &:first-of-type {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.8rem;
+                    width: 86%;
+
+                    p {
+                        color: var(--black);
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        line-height: normal;
+
+                        @include breakpoint($sm-bp) {
+                            font-size: 1.4rem;
+                        }
+
+                        &:first-child {
+                            font-size: 2.4rem;
+                            font-weight: 500;
+                            letter-spacing: 0.024rem;
+
+                            @include breakpoint($sm-bp) {
+                                font-size: 1.8rem;
+
+                                letter-spacing: 0.018rem;
+                            }
+                        }
+                    }
+                }
+
+                &:last-of-type {
+                    width: 9.2rem;
+                    height: 9.2rem;
+                    border-radius: 50%;
+                    background: var(--lightYellow);
+                    padding: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @include breakpoint($sm-bp) {
+                        width: 5.1rem;
+                        height: 5.1rem;
+                    }
+
+                    svg {
+                        width: 5.8rem;
+                        height: 5.8rem;
+                        fill: transparent;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.main__text-img {
+    h3 {
+        color: var(--black);
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.036rem;
+    }
+
+    a {
+        @include breakpoint($xl-bp) {
+            display: none;
+        }
+
+        &.--mobile {
+            display: none;
+
+            @include breakpoint($xl-bp) {
+                display: block;
+            }
+
+            @include breakpoint($sm-bp) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.main__text-img-content {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+    @include breakpoint($xl-bp) {
+        flex-direction: column;
+    }
+
+    &.--catalog-final-modify {
+
+        .main__text-img-left {
+            width: 99.5rem;
+
+            @include breakpoint($xl-bp) {
+                width: 100%;
+            }
+        }
+
+        .main__text-img-right {
+            width: 41%;
+
+            @include breakpoint($xl-bp) {
+                width: 100%;
+            }
+        }
+    }
+
+    &.--reverse {
+        flex-direction: row-reverse;
+
+        @include breakpoint($xl-bp) {
+            flex-direction: column-reverse;
+        }
+
+        .main__text-img-left {
+            display: flex;
+            flex-direction: column;
+
+
+
+            .main__text-img-content-description {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                @include breakpoint($xl-bp) {
+                    order: 3;
+                }
+
+            }
+        }
+    }
+}
+
+.main__text-img-left {
+    width: 56rem;
+
+    @include breakpoint($cos-bp) {
+        width: 51rem;
+    }
+
+    @include breakpoint($xl-bp) {
+        width: 100%;
+    }
+
+    p,
+    li {
+        color: var(--black);
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: normal;
+
+        @include breakpoint($sm-bp) {
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+    }
+
+    ul {
+        padding-left: 2rem;
+
+        li {
+            list-style-type: disc;
+
+        }
+    }
+
+    &.--about-us-modify {
+
+        a {
+            margin-top: 5rem;
+        }
+    }
+}
+
+.main__text-img-right {
+    width: 114rem;
+
+    @include breakpoint($cos-bp) {
+        width: 74rem;
+    }
+
+    @include breakpoint($xl-bp) {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2rem;
+    }
+
+    &.--modify {
+        display: flex;
+        gap: 2rem;
+
+        @include breakpoint($lb-bp) {
+            flex-direction: column;
+        }
+
+        div {
+            &:last-child {
+                margin-top: -12rem;
+
+                @include breakpoint($cos-bp) {
+                    margin-top: 0rem;
+                }
+            }
+        }
+    }
+}
+
+.main__portfolio {
+    @include breakpoint($sm-bp) {
+        padding-right: 1.5rem;
+    }
+
+    h3 {
+        color: var(--black);
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.036rem;
+
+        @include breakpoint($sm-bp) {
+            color: var(--black);
+            font-size: 3.2rem;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.032rem;
+        }
+    }
+
+    &.--television-modify {
+        padding-right: 10rem;
+
+        @include breakpoint($cos-bp) {
+            padding-right: 3rem;
+        }
+
+        @include breakpoint($sm-bp) {
+            padding-right: 0rem;
+        }
+    }
+}
+
+.main__portfolio-swiper {
+    margin-top: 4rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2rem;
+    }
+
+    .swiper-slide {
+        &:nth-child(odd) {
+            margin-top: 5rem;
+        }
+    }
+
+    &.--television-modify {
+        .swiper-slide {
+            &:nth-child(odd) {
+
+                @include breakpoint($xl-bp) {
+                    margin-top: 0rem;
+                }
+
+            }
+        }
+    }
+}
+
+.main__reviews-swiper {
+
+    .slide-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        padding: 2rem;
+        background: var(--lightGray);
+    }
+
+    .swiper-content-top {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+
+
+            &:first-child {
+                width: 30%;
+
+                p {
+                    color: var(--black);
+                    font-size: 1.2rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    &:first-child {
+                        font-size: 2rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            &:last-child {
+                display: flex;
+                gap: 0.8rem;
+
+                svg {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                }
+            }
+        }
+    }
+
+    .swiper-content-bottom {
+        margin-top: 1.6rem;
+
+        p {
+            color: var(--black);
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
+.main__clients {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+        row-gap: 6rem;
+
+        @include breakpoint($sm-bp) {
+            gap: 2rem;
+        }
+
+        li {
+            width: 26.7rem;
+
+            @include breakpoint($cos-bp) {
+                width: 30rem;
+            }
+
+            @include breakpoint($sm-bp) {
+                width: 47%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

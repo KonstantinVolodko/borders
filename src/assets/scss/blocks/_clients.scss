@@ -1,0 +1,46 @@
+.bread-crumbs {
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    @include breakpoint($sm-bp) {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    svg {
+        fill: transparent;
+        width: 0.8rem;
+        height: 4rem;
+    }
+
+    a {
+        color: var(--black);
+
+        background-image: linear-gradient(to right,
+                var(--blue),
+                var(--blue) 50%,
+                var(--black) 50%);
+        background-size: 200% 100%;
+        background-position: 100%;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-position: 0;
+        }
+    }
+
+    p {
+        opacity: 0.5;
+    }
+}
