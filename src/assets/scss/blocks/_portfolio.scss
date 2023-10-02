@@ -53,6 +53,15 @@
     .main__about-company-arrows {
         justify-content: space-between;
         width: 100%;
+
+        @include breakpoint($sm-bp) {
+            button:last-child {
+                width: 3.8rem;
+                height: 1.8rem;
+            }
+        }
+
+        
     }
 }
 

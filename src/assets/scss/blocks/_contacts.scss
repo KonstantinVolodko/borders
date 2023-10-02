@@ -103,6 +103,11 @@
         position: unset;
     }
 
+    @include breakpoint($sm-bp) {
+        border-radius: 2rem;
+        margin-top: -2rem;
+    }
+
     p {
         color: var(--black);
         font-size: 2.4rem;

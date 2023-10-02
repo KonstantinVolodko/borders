@@ -2,6 +2,7 @@
     position: relative;
     padding-top: 16.8rem;
     padding-bottom: 10.8rem;
+    min-height: 100vh;
 
     @include breakpoint($lb-bp) {
         padding-top: 11.8rem;
@@ -9,7 +10,7 @@
     }
 
     h1 {
-        min-height: 32rem;
+        min-height: 32.5rem;
 
         @include breakpoint($xl-bp) {
             min-height: unset;
@@ -205,6 +206,26 @@
     a {
         margin-top: 4rem;
         margin-left: auto;
+
+        &>p:first-of-type {
+            background-image: linear-gradient(to right,
+                    var(--blue),
+                    var(--blue) 50%,
+                    var(--black) 50%);
+            background-size: 200% 100%;
+            background-position: 100%;
+            position: relative;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+
+            &>p:first-of-type {
+                background-position: 0;
+            }
+        }
     }
 
     ul {
@@ -306,7 +327,9 @@
             gap: 4rem;
         }
 
-
+        @include breakpoint($sm-bp) {
+            margin-top: 0rem;
+        }
 
         .main__about-company-right {
             width: 58%;
@@ -334,6 +357,23 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
+
+
+        }
+
+        .main__videos-navigation {
+            &.--mobile {
+                margin-top: 0rem;
+            }
+        }
+
+        .television__video-title {
+            p:last-child {
+                @include breakpoint($sm-bp) {
+                    font-size: 3.2rem;
+                    letter-spacing: 0.032rem;
+                }
+            }
         }
     }
 }
@@ -440,7 +480,7 @@
         }
 
         @include breakpoint($sm-bp) {
-            margin-top: 0rem;
+            margin-top: 2rem;
         }
     }
 
@@ -495,6 +535,10 @@
         @include breakpoint($xl-bp) {
             display: flex;
         }
+    }
+
+    &.--television-modify {
+        display: block;
     }
 
 
@@ -592,6 +636,23 @@
 
     .main__videos-video-container {
         position: relative;
+
+        .play-button {
+
+            &::before {
+                transition: scale 0.2s linear;
+            }
+        }
+
+        &:hover {
+
+            .play-button {
+
+                &::before {
+                    scale: 1.5;
+                }
+            }
+        }
     }
 
     .video-preview {
@@ -865,6 +926,9 @@
 }
 
 .main__price-list {
+
+    overflow: hidden;
+
     ul {
         display: flex;
         column-gap: 2rem;
@@ -955,6 +1019,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 2rem 2rem 2rem 7.2rem;
+            background: var(--lightGray);
+            border-radius: 2rem;
 
             @include breakpoint($cos-bp) {
                 width: 61rem;
@@ -1258,6 +1324,10 @@
     .swiper-slide {
         &:nth-child(odd) {
             margin-top: 5rem;
+
+            @include breakpoint($sm-bp) {
+                margin-top: 0rem;
+            }
         }
     }
 
