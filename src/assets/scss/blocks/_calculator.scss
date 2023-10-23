@@ -1,7 +1,7 @@
 .calculator__title {
 
     h1 {
-        color: var(--black);
+        color: #555555;
         font-size: 6.4rem;
         font-weight: 600;
         letter-spacing: 0.064rem;
@@ -201,7 +201,7 @@
 }
 
 .calculator__tabs {
-    
+
     h2 {
         color: var(--gray);
         font-size: 3.6rem;
@@ -322,7 +322,7 @@
         li {
             display: flex;
 
-            textarea {
+            button {
                 color: var(--black);
                 font-size: 1.8rem;
                 font-weight: 400;
@@ -335,11 +335,10 @@
                 background: transparent;
                 border-left: 0.3rem solid var(--gray);
                 transition: all 0.3s linear;
-                resize: none;
-                outline: none;
                 width: 39rem;
                 cursor: pointer;
                 border-radius: 0rem;
+                text-align: left;
 
                 @include breakpoint($sm-bp) {
                     width: 100%;
@@ -353,7 +352,7 @@
 
             &.active {
 
-                textarea {
+                button {
                     padding-top: 2rem;
                     padding-bottom: 2rem;
                     border-left: 0.3rem solid var(--blue);
@@ -383,6 +382,9 @@
         }
     }
 
+    .hidden-helper-inp {
+        display: none;
+    }
 
 }
 
@@ -491,6 +493,12 @@
             &.--error {
                 box-shadow: rgba(255, 0, 0, 0.2) 0px 0.4rem 0.8rem;
             }
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
         }
 
         p {
@@ -829,6 +837,7 @@
     left: 120%;
     // width: 22rem;
     display: none;
+    background: var(--white);
 
     @include breakpoint($sm-bp) {
         position: unset;
@@ -903,6 +912,7 @@
     top: 0;
     left: 120%;
     display: none;
+    background: var(--white);
 
     @include breakpoint($sm-bp) {
         position: unset;
@@ -1097,4 +1107,36 @@
 
 .calculator__tab-container[data-tab="tab_4"] {
     margin-top: -2rem;
+}
+
+.calculator__tab-subtab-dors-count {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    input {
+        display: block;
+        outline: none;
+        color: var(--black);
+        font-size: 1.8rem;
+        font-weight: 400;
+        width: 100%;
+        border: none;
+        border-bottom: 0.1rem solid var(--gray);
+        padding-bottom: 0.6rem;
+        font-family: Mulish;
+        direction: rtl;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 }

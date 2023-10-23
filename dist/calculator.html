@@ -628,37 +628,35 @@
                             <h2>Выберите тип перегородки</h2>
                             <ul>
                                 <li class="active">
-                                    <textarea name="Стационарная, заполнение в 1 слой"
-                                        readonly>Стационарная, заполнение в 1 слой</textarea>
+                                    <button>Стационарная, заполнение в 1 слой</button>
                                     <div>
                                         <img src="./assets/images/tab1Inner1.jpg" alt="#">
                                     </div>
                                 </li>
             
                                 <li>
-                                    <textarea name="Стационарная, заполнение в 2 слоя"
-                                        readonly>Стационарная, заполнение в 2 слоя</textarea>
+                                    <button>Стационарная, заполнение в 2 слоя</button>
                                     <div>
                                         <img src="./assets/images/tab1Inner2.jpg" alt="#">
                                     </div>
                                 </li>
             
                                 <li>
-                                    <textarea name="Цельностеклянная" readonly>Цельностеклянная</textarea>
+                                    <button>Цельностеклянная</button>
                                     <div>
                                         <img src="./assets/images/tab1Inner1.jpg" alt="#">
                                     </div>
                                 </li>
             
                                 <li>
-                                    <textarea name="Мобильная" readonly>Мобильная</textarea>
+                                    <button>Мобильная</button>
                                     <div>
                                         <img src="./assets/images/tab1Inner2.jpg" alt="#">
                                     </div>
                                 </li>
             
                                 <li>
-                                    <textarea name="Сантехническая" readonly>Сантехническая</textarea>
+                                    <button>Сантехническая</button>
                                     <div>
                                         <img src="./assets/images/tab1Inner1.jpg" alt="#">
                                     </div>
@@ -668,6 +666,8 @@
                             <div class="calculator__tab-content">
                                 <img src="./assets/images/tab1Inner1.jpg" alt="#">
                             </div>
+            
+                            <input type="text" name="тип перегородки" class="hidden-helper-inp">
                         </div>
             
                         <div class="calculator__tab-container" data-tab="tab_2" style="display: none;">
@@ -691,13 +691,13 @@
                             <div class="calculator__tab-sizes-input">
                                 <div>
                                     <p>Высота</p>
-                                    <input type="text" name="height">
+                                    <input type="number" name="height">
                                     <p>м</p>
                                 </div>
             
                                 <div>
                                     <p>Общая длина</p>
-                                    <input type="text" name="width">
+                                    <input type="number" name="width">
                                     <p>м</p>
                                 </div>
                             </div>
@@ -859,6 +859,14 @@
                                 </div>
             
                                 <div class="calculator__tab-subtab-helper"></div>
+            
+                                <div class="calculator__tab-subtab-dors-count">
+                                    <p>4. Укажите количество дверей</p>
+                                    <div>
+                                        <input type="number" name="monoblock-dors-count">
+                                        <p>шт.</p>
+                                    </div>
+                                </div>
                             </div>
             
                             <div class="calculator__tab-subtab" data-tab="subtub_2" style="display: none;">
@@ -1124,6 +1132,14 @@
                                 </div>
             
                                 <div class="calculator__tab-subtab-helper"></div>
+            
+                                <div class="calculator__tab-subtab-dors-count">
+                                    <p>4. Укажите количество дверей</p>
+                                    <div>
+                                        <input type="number" name="separateBottom-dors-count">
+                                        <p>шт.</p>
+                                    </div>
+                                </div>
                             </div>
             
                             <div class="calculator__tab-subtab" data-tab="subtub_3" style="display: none;">
@@ -1389,6 +1405,14 @@
                                 </div>
             
                                 <div class="calculator__tab-subtab-helper"></div>
+            
+                                <div class="calculator__tab-subtab-dors-count">
+                                    <p>4. Укажите количество дверей</p>
+                                    <div>
+                                        <input type="number" name="separateTop-dors-count">
+                                        <p>шт.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
             

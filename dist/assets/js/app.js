@@ -11151,8 +11151,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (listItems !== undefined && window.matchMedia("(min-width: 1024px)").matches) {
         listItems.forEach((item) => {
             gsap.to(item, {
-                opacity: 1,               // Animate opacity to 1
-                y: 0,                     // Animate Y position to 0
+                opacity: 1,
                 duration: 0.5,            // Animation duration
                 ease: "power2.inOut",     // Easing function
                 scrollTrigger: {
@@ -11381,7 +11380,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateActiveStep();
             }
 
-            scrollToTop();
+            if (window.matchMedia("(max-width: 1024px)").matches) {
+                scrollToTop();
+            }
+            
         });
     }
 
@@ -11394,7 +11396,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateActiveStep();
             }
 
-            scrollToTop();
+            if (window.matchMedia("(max-width: 1024px)").matches) {
+                scrollToTop();
+            }
         });
     }
 
@@ -11415,6 +11419,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (counter === 0) {
         const firstTabContent = document.querySelector('.calculator__tab-container[data-tab="tab_1"] .calculator__tab-content');
         const calculatorTabListButton = document.querySelectorAll('.calculator__tab-container[data-tab="tab_1"] ul li');
+        let hiddenHelperInput = document.querySelector('.hidden-helper-inp')
 
         calculatorTabListButton.forEach(e => {
             e.addEventListener('click', () => {
@@ -11422,6 +11427,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     el.classList.remove('active');
                 });
                 e.classList.add('active');
+                hiddenHelperInput.value = e.querySelector('button').innerText
 
                 animateContentChange(firstTabContent, e.querySelector("div").innerHTML);
             });

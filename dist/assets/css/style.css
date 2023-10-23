@@ -922,6 +922,7 @@ svg {
     justify-content: center;
     cursor: pointer;
     position: relative;
+    z-index: 1;
 }
 
 @media (max-width: 500px) {
@@ -942,6 +943,7 @@ svg {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 3rem;
     transition: all 1s ease;
+    z-index: 0;
 }
 
 .button:hover:before {
@@ -966,6 +968,7 @@ svg {
     background: rgba(255, 255, 255, 0.1);
     -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
+    border: none;
 }
 
 .button.--blur svg {
@@ -1007,6 +1010,12 @@ svg {
     border: 0.1rem solid var(--white);
     background: var(--white);
     color: var(--blue);
+    z-index: 1;
+}
+
+.button.--white:before {
+    background: hsla(43deg, 100%, 75%, 0.4);
+    z-index: 0;
 }
 
 .header__social-media li a {
@@ -1022,7 +1031,6 @@ svg {
 .header__social-media li svg {
     width: 100%;
     height: 100%;
-    stroke: var(--white);
 }
 
 .header__menu {
@@ -2669,6 +2677,10 @@ button.swiper-pagination-bullet {
     }
 }
 
+.main__description-block a:first-child {
+    border: 0.1rem solid var(--white);
+}
+
 @media (max-width: 500px) {
     .main__description-block a:first-child {
         font-size: 1.4rem;
@@ -2799,6 +2811,12 @@ button.swiper-pagination-bullet {
     }
 }
 
+.main__title-bottom .--blur {
+    background: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+
 .main__catalog a {
     margin-top: 4rem;
     margin-left: auto;
@@ -2823,8 +2841,6 @@ button.swiper-pagination-bullet {
     border-top: 0.1rem solid var(--gray);
     transition: scale 0.2s;
     opacity: 0;
-    -webkit-transform: translateY(2rem);
-    transform: translateY(2rem);
 }
 
 @media (max-width: 1024px) {
@@ -2845,9 +2861,31 @@ button.swiper-pagination-bullet {
 
 .main__catalog ul li a {
     margin-top: 0rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
 }
 
-.main__catalog ul li p {
+.main__catalog ul li a:hover > div:nth-child(2) {
+    opacity: 1;
+}
+
+.main__catalog ul li a:hover > div:last-child {
+    opacity: 1;
+}
+
+.main__catalog ul li a > div:first-child {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 0;
+}
+
+.main__catalog ul li a > div:first-child p {
     color: var(--black);
     font-size: 2.4rem;
     font-weight: 500;
@@ -2856,10 +2894,72 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 500px) {
-    .main__catalog ul li p {
+    .main__catalog ul li a > div:first-child p {
         font-size: 1.8rem;
         letter-spacing: 0.018rem;
     }
+}
+
+.main__catalog ul li a > div:first-child div {
+    margin-top: 0;
+}
+
+.main__catalog ul li a > div:first-child div p {
+    color: var(--mediumGray);
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main__catalog ul li a > div:nth-child(2) {
+    margin: 0;
+    width: 25rem;
+    position: absolute;
+    z-index: 1111;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1024px) {
+    .main__catalog ul li a > div:nth-child(2) {
+        display: none;
+    }
+}
+
+.main__catalog ul li a > div:nth-child(2) img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.main__catalog ul li a > div:last-child {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1024px) {
+    .main__catalog ul li a > div:last-child {
+        display: none;
+    }
+}
+
+.main__catalog ul li a > div:last-child svg {
+    width: 4.2rem;
+    height: 1.2rem;
+    rotate: 180deg;
 }
 
 .main__catalog ul li div {
@@ -4196,6 +4296,11 @@ button.swiper-pagination-bullet {
 
 .catalog ul li {
     width: 41rem;
+    transition: all 0.3s;
+}
+
+.catalog ul li:hover {
+    scale: 1.03;
 }
 
 @media (max-width: 1330px) {
@@ -4305,6 +4410,11 @@ button.swiper-pagination-bullet {
 
 .reviews ul li {
     width: 26.6rem;
+    transition: all 0.3s;
+}
+
+.reviews ul li:hover {
+    scale: 1.03;
 }
 
 @media (max-width: 1330px) {
@@ -4887,7 +4997,7 @@ button.swiper-pagination-bullet {
     padding: 2rem;
     background: var(--lightYellow);
     border-radius: 2rem;
-    width: 84.9rem;
+    width: 84rem;
 }
 
 @media (max-width: 1330px) {
@@ -5300,7 +5410,7 @@ button.swiper-pagination-bullet {
 }
 
 .calculator__title h1 {
-    color: var(--black);
+    color: #555555;
     font-size: 6.4rem;
     font-weight: 600;
     letter-spacing: 0.064rem;
@@ -5678,7 +5788,7 @@ button.swiper-pagination-bullet {
     display: flex;
 }
 
-.calculator__tab-container[data-tab=tab_1] ul li textarea {
+.calculator__tab-container[data-tab=tab_1] ul li button {
     color: var(--black);
     font-size: 1.8rem;
     font-weight: 400;
@@ -5693,15 +5803,14 @@ button.swiper-pagination-bullet {
     background: transparent;
     border-left: 0.3rem solid var(--gray);
     transition: all 0.3s linear;
-    resize: none;
-    outline: none;
     width: 39rem;
     cursor: pointer;
     border-radius: 0rem;
+    text-align: left;
 }
 
 @media (max-width: 500px) {
-    .calculator__tab-container[data-tab=tab_1] ul li textarea {
+    .calculator__tab-container[data-tab=tab_1] ul li button {
         width: 100%;
         font-size: 1.6rem;
     }
@@ -5711,7 +5820,7 @@ button.swiper-pagination-bullet {
     display: none;
 }
 
-.calculator__tab-container[data-tab=tab_1] ul li.active textarea {
+.calculator__tab-container[data-tab=tab_1] ul li.active button {
     padding-top: 2rem;
     padding-bottom: 2rem;
     border-left: 0.3rem solid var(--blue);
@@ -5741,6 +5850,10 @@ button.swiper-pagination-bullet {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+}
+
+.calculator__tab-container[data-tab=tab_1] .hidden-helper-inp {
+    display: none;
 }
 
 .calculator__tab-container[data-tab=tab_2] {
@@ -5871,6 +5984,12 @@ button.swiper-pagination-bullet {
 
 .calculator__tab-sizes-input div input.--error {
     box-shadow: rgba(255, 0, 0, 0.2) 0px 0.4rem 0.8rem;
+}
+
+.calculator__tab-sizes-input div input[type=number]::-webkit-inner-spin-button,
+.calculator__tab-sizes-input div input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .calculator__tab-sizes-input div p {
@@ -6225,6 +6344,7 @@ button.swiper-pagination-bullet {
     top: 0;
     left: 120%;
     display: none;
+    background: var(--white);
 }
 
 @media (max-width: 500px) {
@@ -6313,6 +6433,7 @@ button.swiper-pagination-bullet {
     top: 0;
     left: 120%;
     display: none;
+    background: var(--white);
 }
 
 @media (max-width: 500px) {
@@ -6549,4 +6670,40 @@ button.swiper-pagination-bullet {
 
 .calculator__tab-container[data-tab=tab_4] {
     margin-top: -2rem;
+}
+
+.calculator__tab-subtab-dors-count {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.calculator__tab-subtab-dors-count div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.calculator__tab-subtab-dors-count input {
+    display: block;
+    outline: none;
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: 100%;
+    border: none;
+    border-bottom: 0.1rem solid var(--gray);
+    padding-bottom: 0.6rem;
+    font-family: Mulish;
+    direction: rtl;
+}
+
+.calculator__tab-subtab-dors-count input[type=number]::-webkit-inner-spin-button,
+.calculator__tab-subtab-dors-count input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

@@ -8,6 +8,11 @@
 
         li {
             width: 41rem;
+            transition: all 0.3s;
+
+            &:hover {
+                scale: 1.03;
+            }
             
 
             @include breakpoint($cos-bp) {
