@@ -536,7 +536,7 @@
             
             
                 <div class="header__social-container">
-                    <a id="callBack-button" class="button --white">
+                    <a class="button --white" data-modal="#callBack-modal">
                         Заказать звонок
                     </a>
             
@@ -1020,9 +1020,9 @@
             
                         <div>
                             <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
-                            <a href="#" class="button --active">
+                            <button href="#" class="button --active send" data-modal="#thanks-modal">
                                 Заказать звонок
-                            </a>
+                            </button>
                         </div>
                     </form>
             
@@ -1056,10 +1056,45 @@
             
                         <div>
                             <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
-                            <a href="#" class="button --active">
+                            <button type="submit" class="button --active send" data-modal="#thanks-modal">
                                 Заказать звонок
-                            </a>
+                            </button>
                         </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="price-modal" class="price-modal">
+                <div class="price-modal-content">
+                    <span class="close">&times;</span>
+                    <form action="#">
+                        <p>Рассчитать стоимость</p>
+            
+                        <div>
+                            <input type="text" placeholder="Имя">
+            
+                            <input type="text" placeholder="Телефон">
+            
+                            <input type="text" placeholder="Ваши пожелания">
+                        </div>
+            
+                        <div>
+                            <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
+                            <button type="submit" class="button --active send" data-modal="#thanks-modal">
+                                Заказать звонок
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="thanks-modal" class="price-modal">
+                <div class="price-modal-content">
+                    <span class="close">&times;</span>
+                    <form action="#">
+                        <p>Спасибо!</p>
+            
+                        <span>Ваша заявка успешно принята, и мы уже начали ее обработку. Наш менеджер свяжется с вами в ближайшее время для уточнения деталей.</span>
                     </form>
                 </div>
             </div>

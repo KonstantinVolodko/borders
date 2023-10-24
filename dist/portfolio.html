@@ -536,7 +536,7 @@
             
             
                 <div class="header__social-container">
-                    <a id="callBack-button" class="button --white">
+                    <a class="button --white" data-modal="#callBack-modal">
                         Заказать звонок
                     </a>
             
@@ -590,360 +590,2534 @@
             <section class="portfolio page-padding">
                 <h1>Портфолио</h1>
             
-                <ul class="_block-inner-margin-25">
-                    <li>
-                        <a href="#" class="button --transparent">
-                            Все типы перегородок
-                        </a>
-                    </li>
-            
-                    <li>
-                        <a href="#" class="button --active">
-                            Комбинированные
-                        </a>
-                    </li>
-            
-                    <li>
-                        <a href="#" class="button --transparent">
-                            Стационарные
-                        </a>
-                    </li>
-            
-                    <li>
-                        <a href="#" class="button --transparent">
-                            Стеклянные
-                        </a>
-                    </li>
-            
-                    <li>
-                        <a href="#" class="button --transparent">
-                            Мобильные
-                        </a>
-                    </li>
-            
-                    <li>
-                        <a href="#" class="button --transparent">
-                            Раздвижные
-                        </a>
-                    </li>
-            
-                    <li>
-                        <a href="#" class="button --transparent">
-                            Сантехнические
-                        </a>
-                    </li>
-            
-                    <li>
-                        <a href="#" class="button --transparent">
-                            Лофт
-                        </a>
-                    </li>
-                </ul>
-            
-                <div class="portfolio__item _mt-10">
-                    <div class="portfilio__title-container">
-                        <div class="portfilio__title-container-inner">
-                            <p>Частный интерьер №2</p>
-                            <p>Срок изготовления данного проекта:</p>
-                            <p>10 рабочих дней</p>
+                <div id="portfolio-tabs">
+                    <ul class="_block-inner-margin-25">
+                        <li>
+                            <button class="button --transparent" data-tab="portfolio-tabs-1">
+                                Все типы перегородок
+                            </button>
+                        </li>
+                
+                        <li>
+                            <button class="button --transparent" data-tab="portfolio-tabs-2">
+                                Комбинированные
+                            </button>
+                        </li>
+                
+                        <li>
+                            <button class="button --transparent" data-tab="portfolio-tabs-3">
+                                Стационарные
+                            </button>
+                        </li>
+                
+                        <li>
+                            <button class="button --transparent" data-tab="portfolio-tabs-4">
+                                Стеклянные
+                            </button>
+                        </li>
+                
+                        <li>
+                            <button class="button --transparent" data-tab="portfolio-tabs-5">
+                                Мобильные
+                            </button>
+                        </li>
+                
+                        <li>
+                            <button class="button --transparent" data-tab="portfolio-tabs-6">
+                                Раздвижные
+                            </button>
+                        </li>
+                
+                        <li>
+                            <button class="button --transparent" data-tab="portfolio-tabs-7">
+                                Сантехнические
+                            </button>
+                        </li>
+                
+                        <li>
+                            <button class="button --transparent" data-tab="portfolio-tabs-8">
+                                Лофт
+                            </button>
+                        </li>
+                    </ul>
+                
+                    <div class="tab-content" id="portfolio-tabs-1">
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-            
-                        <div class="main__about-company-arrows">
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
             
-                    <div class="portfilio__subtitle-container">
-                        <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
-                            гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
-                            из осветленного стекла.</p>
-                    </div>
-            
-                    <div class="swiper portfolio__swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #3"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    <div class="tab-content" id="portfolio-tabs-2">
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>2222</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-            
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #3"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
                             </div>
-            
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #3"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
                             </div>
-            
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #3"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-            
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
             
-                    <div class="portfolio__arrows-mobile">
-                        <div class="main__about-company-arrows">
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
+                    <div class="tab-content" id="portfolio-tabs-3">
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>3333</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
             
-                <div class="portfolio__item _mt-10">
-                    <div class="portfilio__title-container">
-                        <div class="portfilio__title-container-inner">
-                            <p>Частный интерьер №2</p>
-                            <p>Срок изготовления данного проекта:</p>
-                            <p>10 рабочих дней</p>
+                    <div class="tab-content" id="portfolio-tabs-4">
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>4444</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-            
-                        <div class="main__about-company-arrows">
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
             
-                    <div class="portfilio__subtitle-container">
-                        <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
-                            гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
-                            из осветленного стекла.</p>
-                    </div>
-            
-                    <div class="swiper portfolio__swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #4"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    <div class="tab-content" id="portfolio-tabs-5">
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>5555</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-            
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #4"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
                             </div>
-            
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #4"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
                             </div>
-            
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #4"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-            
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
             
-                    <div class="portfolio__arrows-mobile">
-                        <div class="main__about-company-arrows">
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
+                    <div class="tab-content" id="portfolio-tabs-6">
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>6666</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
             
-                <div class="portfolio__item _mt-10">
-                    <div class="portfilio__title-container">
-                        <div class="portfilio__title-container-inner">
-                            <p>Частный интерьер №2</p>
-                            <p>Срок изготовления данного проекта:</p>
-                            <p>10 рабочих дней</p>
+                    <div class="tab-content" id="portfolio-tabs-7">
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>7777</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-            
-                        <div class="main__about-company-arrows">
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
             
-                    <div class="portfilio__subtitle-container">
-                        <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
-                            гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
-                            из осветленного стекла.</p>
-                    </div>
-            
-                    <div class="swiper portfolio__swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #5"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    <div class="tab-content" id="portfolio-tabs-8">
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>8888</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-            
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #5"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
                             </div>
-            
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #5"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
                             </div>
-            
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #5"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-            
                         </div>
-                    </div>
-            
-                    <div class="portfolio__arrows-mobile">
-                        <div class="main__about-company-arrows">
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="portfolio__item _mt-10">
-                    <div class="portfilio__title-container">
-                        <div class="portfilio__title-container-inner">
-                            <p>Частный интерьер №2</p>
-                            <p>Срок изготовления данного проекта:</p>
-                            <p>10 рабочих дней</p>
-                        </div>
-            
-                        <div class="main__about-company-arrows">
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-            
-                    <div class="portfilio__subtitle-container">
-                        <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
-                            гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
-                            из осветленного стекла.</p>
-                    </div>
-            
-                    <div class="swiper portfolio__swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #6"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-            
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #6"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
                             </div>
-            
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #6"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #4"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
                             </div>
-            
-                            <div class="swiper-slide">
-                                <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" data-caption="Caption #6"
-                                    class="swiper-img">
-                                    <img src="./assets/images/portfolioImg.jpg" alt="#">
-                                </a>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-            
                         </div>
-                    </div>
-            
-                    <div class="portfolio__arrows-mobile">
-                        <div class="main__about-company-arrows">
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
-                            <button>
-                                <svg>
-                                    <use href="#blueArrow"></use>
-                                </svg>
-                            </button>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #5"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="portfolio__item _mt-10">
+                            <div class="portfilio__title-container">
+                                <div class="portfilio__title-container-inner">
+                                    <p>Частный интерьер №2</p>
+                                    <p>Срок изготовления данного проекта:</p>
+                                    <p>10 рабочих дней</p>
+                                </div>
+                    
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <div class="portfilio__subtitle-container">
+                                <p>Система Crystal. Цельностеклянные перегородки. Заполнение стекло 10 мм закаленное. Перегородка
+                                    гардеробной и душевой выполнены из стекла тонированного в массе, цвет Бронза. Экранн на ванную выполнен
+                                    из осветленного стекла.</p>
+                            </div>
+                    
+                            <div class="swiper portfolio__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                    <div class="swiper-slide">
+                                        <a href="./assets/images/portfolioImg.jpg" data-fancybox="gallery" loading="lazy" data-caption="Caption #6"
+                                            class="swiper-img">
+                                            <img src="./assets/images/portfolioImg.jpg" alt="#">
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                            <div class="portfolio__arrows-mobile">
+                                <div class="main__about-company-arrows">
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg>
+                                            <use href="#blueArrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1045,9 +3219,9 @@
             
                         <div>
                             <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
-                            <a href="#" class="button --active">
+                            <button href="#" class="button --active send" data-modal="#thanks-modal">
                                 Заказать звонок
-                            </a>
+                            </button>
                         </div>
                     </form>
             
@@ -1081,10 +3255,45 @@
             
                         <div>
                             <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
-                            <a href="#" class="button --active">
+                            <button type="submit" class="button --active send" data-modal="#thanks-modal">
                                 Заказать звонок
-                            </a>
+                            </button>
                         </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="price-modal" class="price-modal">
+                <div class="price-modal-content">
+                    <span class="close">&times;</span>
+                    <form action="#">
+                        <p>Рассчитать стоимость</p>
+            
+                        <div>
+                            <input type="text" placeholder="Имя">
+            
+                            <input type="text" placeholder="Телефон">
+            
+                            <input type="text" placeholder="Ваши пожелания">
+                        </div>
+            
+                        <div>
+                            <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
+                            <button type="submit" class="button --active send" data-modal="#thanks-modal">
+                                Заказать звонок
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="thanks-modal" class="price-modal">
+                <div class="price-modal-content">
+                    <span class="close">&times;</span>
+                    <form action="#">
+                        <p>Спасибо!</p>
+            
+                        <span>Ваша заявка успешно принята, и мы уже начали ее обработку. Наш менеджер свяжется с вами в ближайшее время для уточнения деталей.</span>
                     </form>
                 </div>
             </div>

@@ -10663,7 +10663,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //# sourceMappingURL=swiper-bundle.js.map
 
     Fancybox.bind("[data-fancybox]", {
-        // Your custom options
+        Thumbs: false
     });
 
     SmoothScroll({
@@ -10910,6 +10910,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (document.querySelector('.catalog-final__varians-swiper')) {
         new Swiper(".catalog-final__varians-swiper", {
             slidesPerView: 1,
+            watchSlidesProgress: true,
             spaceBetween: 20,
             loop: true,
             navigation: {
@@ -10985,24 +10986,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     class Modal {
-        constructor(modalId, openButtons) {
-            this.modal = document.getElementById(modalId);
-            this.openButtons = [];
+        constructor(modalSelector) {
+            this.modal = document.querySelector(modalSelector);
+            this.initOpenButtons(modalSelector);
+            this.initCloseButton();
+        }
 
-            if (typeof openButtons === 'string') {
-                this.openButtons = Array.from(document.getElementsByClassName(openButtons));
-            } else if (Array.isArray(openButtons)) {
-                this.openButtons = openButtons.map(buttonId => document.getElementById(buttonId));
-            }
+        initOpenButtons(modalSelector) {
+            const buttons = document.querySelectorAll(`[data-modal="${modalSelector}"]`);
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    this.open();
+                    this.disableBodyScroll();
+                });
+            });
+        }
 
-            this.openButtons.forEach(button => {
-                if (button) {
-                    button.addEventListener('click', () => {
-                        this.open();
-                        this.disableBodyScroll();
+        initCloseButton() {
+            if (this.modal) {
+                const closeButton = this.modal.querySelector('.close');
+                if (closeButton) {
+                    closeButton.addEventListener('click', () => {
+                        this.close();
+                        this.enableBodyScroll();
                     });
                 }
-            });
+            }
 
             window.addEventListener('click', (event) => {
                 if (this.modal && event.target === this.modal) {
@@ -11010,14 +11019,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     this.enableBodyScroll();
                 }
             });
-
-            const closeButton = this.modal ? this.modal.querySelector('.close') : null;
-            if (closeButton) {
-                closeButton.addEventListener('click', () => {
-                    this.close();
-                    this.enableBodyScroll();
-                });
-            }
         }
 
         open() {
@@ -11046,14 +11047,86 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    const burgerModal = new Modal('burger-modal');
+    // const burgerModal = new Modal('burger-modal');
 
-    const callBack = new Modal('callBack-modal', ['callBack-button', 'callBack-button-transparent']);
+    // const callBack = new Modal('callBack-modal', ['callBack-button', 'callBack-button-transparent']);
 
+    const burgerModal = new Modal("#burger-modal")
+    const callBack = new Modal('#callBack-modal');
+    const priceModal = new Modal('#price-modal');
+    const thanksModal = new Modal('#thanks-modal');
+
+    let sendBtn = document.querySelectorAll('.send')
+    sendBtn.forEach(e => {
+        e.addEventListener('click', (el) => {
+            event.preventDefault();
+            callBack.close()
+            priceModal.close()
+            callBack.enableBodyScroll()
+            priceModal.enableBodyScroll()
+            
+        })
+    })
+
+    class Tabs {
+        constructor(containerId) {
+            this.container = document.getElementById(containerId);
+            this.buttons = this.container.querySelectorAll('ul .button');
+            this.contents = this.container.querySelectorAll('.tab-content');
+            this.initTabs();
+        }
+
+        initTabs() {
+            this.buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.getAttribute('data-tab');
+                    this.changeTab(tabId);
+                });
+            });
+
+            // Установка первой вкладки активной по умолчанию
+            if (this.buttons.length > 0 && this.contents.length > 0) {
+                this.buttons[0].classList.add('--active');
+                this.contents[0].classList.add('--active');
+                this.contents[0].style.display = 'block';
+            }
+        }
+
+        changeTab(tabId) {
+            const activeContent = this.container.querySelector('.tab-content.--active');
+
+            if (activeContent) {
+                activeContent.addEventListener('transitionend', () => {
+                    activeContent.style.display = 'none';
+                }, { once: true });
+            }
+
+            // Удаляем класс active у всех кнопок и контента
+            this.buttons.forEach(btn => btn.classList.remove('--active'));
+            this.contents.forEach(content => content.classList.remove('--active'));
+
+            // Добавляем класс active нужной кнопке и контенту
+            const newActiveButton = this.container.querySelector(`ul .button[data-tab="${tabId}"]`);
+            const newActiveContent = this.container.querySelector(`#${tabId}`);
+
+            newActiveButton.classList.add('--active');
+            newActiveContent.classList.add('--active');
+            newActiveContent.style.display = 'block';
+        }
+    }
+
+    if (document.querySelector('.portfolio')) {
+        const portfolioTabs = new Tabs('portfolio-tabs');
+    }
+
+    if (document.querySelector('.contacts')) {
+        const contactsTabs = new Tabs('contacts-tabs');
+    }
+    
 
     if (window.matchMedia("(max-width: 1330px)").matches) {
         document.querySelector('.burger-modal-content').innerHTML = document.querySelector('.header').innerHTML
-
+        new Modal('#callBack-modal')
     }
 
     const burger = document.querySelector(".header__burger");
@@ -11383,7 +11456,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (window.matchMedia("(max-width: 1024px)").matches) {
                 scrollToTop();
             }
-            
+
         });
     }
 

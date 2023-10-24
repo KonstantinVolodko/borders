@@ -536,7 +536,7 @@
             
             
                 <div class="header__social-container">
-                    <a id="callBack-button" class="button --white">
+                    <a class="button --white" data-modal="#callBack-modal">
                         Заказать звонок
                     </a>
             
@@ -589,32 +589,32 @@
             
             <section class="contacts page-padding">
                 <h1>Контакты</h1>
-                <div class="contacts__content _block-inner-margin-25">
+                <div class="contacts__content _block-inner-margin-25" id="contacts-tabs">
                     <div class="contacts__links">
                         <p>Адрес офисов и производств:</p>
                         <ul>
                             <li>
-                                <a href="#" class="button --active">
+                                <button class="button --transparent" data-tab="contacts-tabs-1">
                                     Москва
-                                </a>
+                                </button>
                             </li>
                     
                             <li>
-                                <a href="#" class="button --transparent">
+                                <button class="button --transparent" data-tab="contacts-tabs-2">
                                     Санкт-Петербург
-                                </a>
+                                </button>
                             </li>
                     
                             <li>
-                                <a href="#" class="button --transparent">
+                                <button class="button --transparent" data-tab="contacts-tabs-3">
                                     Екатеринбург
-                                </a>
+                                </button>
                             </li>
                     
                             <li>
-                                <a href="#" class="button --transparent">
+                                <button class="button --transparent" data-tab="contacts-tabs-4">
                                     Нижний Новгород
-                                </a>
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -651,7 +651,79 @@
                         </li>
                     </ul>
             
-                    <div class="contacts__map">
+                    <div class="contacts__map tab-content" id="contacts-tabs-1">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8949.170255880874!2d37.65095375109815!3d55.89228521718698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b530d63adf3743%3A0xaa03745d9201717c!2z0KHRgtGD0LTQtdC90YvQuSDQv9GALdC0LCA0INC60L7RgNC_0YPRgSAxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTI3Mjgy!5e0!3m2!1sru!2sby!4v1694003758695!5m2!1sru!2sby" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
+                        <div class="contacts__map-info">
+                            <p>Адрес офиса:</p>
+            
+                            <ul>
+                                <li>г. Москва, Студеный проезд, д. 4, корп. 1</li>
+                                <li>пн - пт: 9:00 - 18:00сб - вс: выходные</li>
+                                <li><a href="tel:+7 (495) 190-70-37">+7 (495) 190-70-37</a></li>
+                                <li><a href="mailto:Info@peregorodkirf.ru">Info@peregorodkirf.ru</a></li>
+                            </ul>
+            
+                            <p>Адрес производства:</p>
+            
+                            <ul>
+                                <li>г. Москва, Студеный проезд, д. 4, корп. 1</li>
+                                <li>пн - пт: 9:00 - 18:00сб - вс: выходные</li>
+                                <li><a href="tel:+7 (495) 190-70-37">+7 (495) 190-70-37</a></li>
+                                <li><a href="mailto:Info@peregorodkirf.ru">Info@peregorodkirf.ru</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="contacts__map tab-content" id="contacts-tabs-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8949.170255880874!2d37.65095375109815!3d55.89228521718698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b530d63adf3743%3A0xaa03745d9201717c!2z0KHRgtGD0LTQtdC90YvQuSDQv9GALdC0LCA0INC60L7RgNC_0YPRgSAxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTI3Mjgy!5e0!3m2!1sru!2sby!4v1694003758695!5m2!1sru!2sby" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
+                        <div class="contacts__map-info">
+                            <p>Адрес офиса:</p>
+            
+                            <ul>
+                                <li>г. Москва, Студеный проезд, д. 4, корп. 1</li>
+                                <li>пн - пт: 9:00 - 18:00сб - вс: выходные</li>
+                                <li><a href="tel:+7 (495) 190-70-37">+7 (495) 190-70-37</a></li>
+                                <li><a href="mailto:Info@peregorodkirf.ru">Info@peregorodkirf.ru</a></li>
+                            </ul>
+            
+                            <p>Адрес производства:</p>
+            
+                            <ul>
+                                <li>г. Москва, Студеный проезд, д. 4, корп. 1</li>
+                                <li>пн - пт: 9:00 - 18:00сб - вс: выходные</li>
+                                <li><a href="tel:+7 (495) 190-70-37">+7 (495) 190-70-37</a></li>
+                                <li><a href="mailto:Info@peregorodkirf.ru">Info@peregorodkirf.ru</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="contacts__map tab-content" id="contacts-tabs-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8949.170255880874!2d37.65095375109815!3d55.89228521718698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b530d63adf3743%3A0xaa03745d9201717c!2z0KHRgtGD0LTQtdC90YvQuSDQv9GALdC0LCA0INC60L7RgNC_0YPRgSAxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTI3Mjgy!5e0!3m2!1sru!2sby!4v1694003758695!5m2!1sru!2sby" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
+                        <div class="contacts__map-info">
+                            <p>Адрес офиса:</p>
+            
+                            <ul>
+                                <li>г. Москва, Студеный проезд, д. 4, корп. 1</li>
+                                <li>пн - пт: 9:00 - 18:00сб - вс: выходные</li>
+                                <li><a href="tel:+7 (495) 190-70-37">+7 (495) 190-70-37</a></li>
+                                <li><a href="mailto:Info@peregorodkirf.ru">Info@peregorodkirf.ru</a></li>
+                            </ul>
+            
+                            <p>Адрес производства:</p>
+            
+                            <ul>
+                                <li>г. Москва, Студеный проезд, д. 4, корп. 1</li>
+                                <li>пн - пт: 9:00 - 18:00сб - вс: выходные</li>
+                                <li><a href="tel:+7 (495) 190-70-37">+7 (495) 190-70-37</a></li>
+                                <li><a href="mailto:Info@peregorodkirf.ru">Info@peregorodkirf.ru</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="contacts__map tab-content" id="contacts-tabs-4">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8949.170255880874!2d37.65095375109815!3d55.89228521718698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b530d63adf3743%3A0xaa03745d9201717c!2z0KHRgtGD0LTQtdC90YvQuSDQv9GALdC0LCA0INC60L7RgNC_0YPRgSAxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTI3Mjgy!5e0!3m2!1sru!2sby!4v1694003758695!5m2!1sru!2sby" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         
                         <div class="contacts__map-info">
@@ -773,9 +845,9 @@
             
                         <div>
                             <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
-                            <a href="#" class="button --active">
+                            <button href="#" class="button --active send" data-modal="#thanks-modal">
                                 Заказать звонок
-                            </a>
+                            </button>
                         </div>
                     </form>
             
@@ -809,10 +881,45 @@
             
                         <div>
                             <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
-                            <a href="#" class="button --active">
+                            <button type="submit" class="button --active send" data-modal="#thanks-modal">
                                 Заказать звонок
-                            </a>
+                            </button>
                         </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="price-modal" class="price-modal">
+                <div class="price-modal-content">
+                    <span class="close">&times;</span>
+                    <form action="#">
+                        <p>Рассчитать стоимость</p>
+            
+                        <div>
+                            <input type="text" placeholder="Имя">
+            
+                            <input type="text" placeholder="Телефон">
+            
+                            <input type="text" placeholder="Ваши пожелания">
+                        </div>
+            
+                        <div>
+                            <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
+                            <button type="submit" class="button --active send" data-modal="#thanks-modal">
+                                Заказать звонок
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="thanks-modal" class="price-modal">
+                <div class="price-modal-content">
+                    <span class="close">&times;</span>
+                    <form action="#">
+                        <p>Спасибо!</p>
+            
+                        <span>Ваша заявка успешно принята, и мы уже начали ее обработку. Наш менеджер свяжется с вами в ближайшее время для уточнения деталей.</span>
                     </form>
                 </div>
             </div>
