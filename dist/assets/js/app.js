@@ -11045,11 +11045,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.style.paddingRight = '';
             document.body.style.overflow = '';
         }
-
-
     }
-
-    let openModals = []; // Массив для хранения открытых модальных окон
 
     const modalButtons = document.querySelectorAll('[data-modal-target]');
 
@@ -11059,23 +11055,23 @@ document.addEventListener("DOMContentLoaded", () => {
             const modal = new Modal(modalSelector);
             modal.open();
             modal.disableBodyScroll();
-            openModals.push(modal); // Добавляем открытое модальное окно в массив
         });
     });
+
+    const thanksModal = new Modal('#thanks-modal');
 
     let sendBtn = document.querySelectorAll('.send');
     sendBtn.forEach(e => {
         e.addEventListener('click', (event) => {
             event.preventDefault();
-            openModals.forEach(modal => {
-                // Проверяем, что id текущего модального окна не равен 'thanks-modal' и 'burger-modal'
-                if (!['thanks-modal', 'burger-modal'].includes(modal.modal.id)) {
-                    modal.close();
-                    modal.enableBodyScroll();
+            
+            document.querySelectorAll('.modal.open').forEach(modal => {
+                if (modal !== thanksModal.modal) {
+                    modal.style.display = 'none';
+                    modal.classList.remove('open');
                 }
             });
-            // Оставляем в массиве только 'thanks-modal' и 'burger-modal'
-            openModals = openModals.filter(modal => ['thanks-modal', 'burger-modal'].includes(modal.modal.id));
+            thanksModal.open();
         });
     });
 
