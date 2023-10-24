@@ -386,28 +386,39 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.style.paddingRight = '';
             document.body.style.overflow = '';
         }
+
+
     }
 
-    // const burgerModal = new Modal('burger-modal');
+    let openModals = []; // Массив для хранения открытых модальных окон
 
-    // const callBack = new Modal('callBack-modal', ['callBack-button', 'callBack-button-transparent']);
+    const modalButtons = document.querySelectorAll('[data-modal-target]');
 
-    const burgerModal = new Modal("#burger-modal")
-    const callBack = new Modal('#callBack-modal');
-    const priceModal = new Modal('#price-modal');
-    const thanksModal = new Modal('#thanks-modal');
+    modalButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            const modalSelector = button.dataset.modalTarget;
+            const modal = new Modal(modalSelector);
+            modal.open();
+            modal.disableBodyScroll();
+            openModals.push(modal); // Добавляем открытое модальное окно в массив
+        });
+    });
 
-    let sendBtn = document.querySelectorAll('.send')
+    let sendBtn = document.querySelectorAll('.send');
     sendBtn.forEach(e => {
-        e.addEventListener('click', (el) => {
+        e.addEventListener('click', (event) => {
             event.preventDefault();
-            callBack.close()
-            priceModal.close()
-            callBack.enableBodyScroll()
-            priceModal.enableBodyScroll()
-            
-        })
-    })
+            openModals.forEach(modal => {
+                // Проверяем, что id текущего модального окна не равен 'thanks-modal' и 'burger-modal'
+                if (!['thanks-modal', 'burger-modal'].includes(modal.modal.id)) {
+                    modal.close();
+                    modal.enableBodyScroll();
+                }
+            });
+            // Оставляем в массиве только 'thanks-modal' и 'burger-modal'
+            openModals = openModals.filter(modal => ['thanks-modal', 'burger-modal'].includes(modal.modal.id));
+        });
+    });
 
     class Tabs {
         constructor(containerId) {
@@ -463,42 +474,64 @@ document.addEventListener("DOMContentLoaded", () => {
     if (document.querySelector('.contacts')) {
         const contactsTabs = new Tabs('contacts-tabs');
     }
-    
+
 
     if (window.matchMedia("(max-width: 1330px)").matches) {
-        document.querySelector('.burger-modal-content').innerHTML = document.querySelector('.header').innerHTML
-        new Modal('#callBack-modal')
+        const burgerModalContent = document.querySelector('.burger-modal-content');
+        const header = document.querySelector('.header');
+
+        burgerModalContent.innerHTML = header.innerHTML;
+
+        // Предположим, что у вас есть кнопка внутри .header, которая открывает модальное окно
+        const modalButton = burgerModalContent.querySelector('[data-modal-target]');
+        if (modalButton) {
+            const modalSelector = modalButton.dataset.modalTarget;
+            const modal = new Modal(modalSelector);
+            modalButton.addEventListener('click', function () {
+                modal.open();
+                modal.disableBodyScroll();
+            });
+        }
+
+        new Modal('#callBack-modal');
     }
 
     const burger = document.querySelector(".header__burger");
-    const burgerModalContainer = document.querySelector('.burger-modal')
+    const burgerModalContainer = document.querySelector('.burger-modal');
 
     if (burger) {
         burger.addEventListener("click", function () {
             this.classList.toggle("active");
 
+            const burgerModal = new Modal("#burger-modal");
 
             if (this.classList.contains("active")) {
-                burgerModalContainer.style.top = document.querySelector('header').scrollHeight + "px"
+                burgerModalContainer.style.top = document.querySelector('header').scrollHeight + "px";
 
-                burgerModal.disableBodyScroll()
-                burgerModal.open()
-                document.querySelector('.burger-modal-content').style.height = document.querySelector('.burger-modal-content').scrollHeight + document.querySelector('.burger-modal-content .header__menu').scrollHeight + 'px';
+                burgerModal.disableBodyScroll();
+                burgerModal.open();
 
-                if (document.querySelector('.header').classList.contains('transparent')) {
-                    document.querySelector('.header').style.background = "var(--white)"
-                    document.querySelector('.header__logo p').style.backgroundImage = "linear-gradient(to right, var(--black), var(--black) 50%, var(--blue) 50%)"
-                    document.querySelector('.header__logo p').style.backgroundPosition = "0"
+                const burgerModalContent = document.querySelector('.burger-modal-content');
+                burgerModalContent.style.height = burgerModalContent.scrollHeight + document.querySelector('.burger-modal-content .header__menu').scrollHeight + 'px';
 
+                const header = document.querySelector('.header');
+                if (header.classList.contains('transparent')) {
+                    header.style.background = "var(--white)";
+                    const headerLogoP = document.querySelector('.header__logo p');
+                    headerLogoP.style.backgroundImage = "linear-gradient(to right, var(--black), var(--black) 50%, var(--blue) 50%)";
+                    headerLogoP.style.backgroundPosition = "0";
                 }
 
             } else {
-                burgerModal.close()
-                burgerModal.enableBodyScroll()
-                if (document.querySelector('.header').classList.contains('transparent')) {
-                    document.querySelector('.header').style.background = "transparent"
-                    document.querySelector('.header__logo p').style.backgroundImage = null
-                    document.querySelector('.header__logo p').style.backgroundPosition = "100%"
+                burgerModal.close();
+                burgerModal.enableBodyScroll();
+
+                const header = document.querySelector('.header');
+                if (header.classList.contains('transparent')) {
+                    header.style.background = "transparent";
+                    const headerLogoP = document.querySelector('.header__logo p');
+                    headerLogoP.style.backgroundImage = null;
+                    headerLogoP.style.backgroundPosition = "100%";
                 }
             }
         });

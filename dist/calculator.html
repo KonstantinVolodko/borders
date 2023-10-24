@@ -536,7 +536,7 @@
             
             
                 <div class="header__social-container">
-                    <a class="button --white" data-modal="#callBack-modal">
+                    <a class="button --white" data-modal-target="#callBack-modal">
                         Заказать звонок
                     </a>
             
@@ -1458,7 +1458,7 @@
             
                                 <div class="calculator__tab-order-form-button">
                                     <p>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</p>
-                                    <button type="submit" class="button --active send" data-modal="#thanks-modal">Оформить заявку</button>
+                                    <button type="submit" class="button --active send" data-modal-target="#thanks-modal">Оформить заявку</button>
                                 </div>
                             </div>
                         </div>
@@ -1491,7 +1491,7 @@
             
                         <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
             
-                        <button type="submit" data-modal="#thanks-modal" class="send">Заказать расчет</button>
+                        <button type="submit" data-modal-target="#thanks-modal" class="send">Заказать расчет</button>
                     </form>
                 </div>
             </div>
@@ -1592,7 +1592,7 @@
             
                         <div>
                             <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
-                            <button href="#" class="button --active send" data-modal="#thanks-modal">
+                            <button href="#" class="button --active send" data-modal-target="#thanks-modal">
                                 Заказать звонок
                             </button>
                         </div>
@@ -1628,7 +1628,7 @@
             
                         <div>
                             <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
-                            <button type="submit" class="button --active send" data-modal="#thanks-modal">
+                            <button type="submit" class="button --active send" data-modal-target="#thanks-modal">
                                 Заказать звонок
                             </button>
                         </div>
@@ -1652,7 +1652,31 @@
             
                         <div>
                             <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
-                            <button type="submit" class="button --active send" data-modal="#thanks-modal">
+                            <button type="submit" class="button --active send" data-modal-target="#thanks-modal">
+                                Заказать звонок
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="timer-price-modal" class="price-modal">
+                <div class="price-modal-content">
+                    <span class="close">&times;</span>
+                    <form action="#">
+                        <p>Получить рассчет в течении часа</p>
+            
+                        <div>
+                            <input type="text" placeholder="Имя">
+            
+                            <input type="text" placeholder="Телефон">
+            
+                            <input type="text" placeholder="Ваши пожелания">
+                        </div>
+            
+                        <div>
+                            <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
+                            <button type="submit" class="button --active send" data-modal-target="#thanks-modal">
                                 Заказать звонок
                             </button>
                         </div>
