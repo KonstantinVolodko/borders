@@ -11190,33 +11190,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function (event) {
-            event.preventDefault();
-
             let content = this.nextElementSibling;
-            let isActive = this.classList.contains("active");
 
-            document.querySelectorAll('.burger-modal-content .header__menu > li > a').forEach(function (el) {
-                if (el !== this) {
-                    el.classList.remove("active");
-                    let panel = el.nextElementSibling;
-                    panel.style.paddingTop = "0rem";
-                    panel.style.maxHeight = null;
+            if (content && content.classList.contains('header__submenu')) {
+                event.preventDefault();
+                let isActive = this.classList.contains("active");
+
+                document.querySelectorAll('.burger-modal-content .header__menu > li > a').forEach(function (el) {
+                    if (el !== this) {
+                        el.classList.remove("active");
+                        let panel = el.nextElementSibling;
+                        if (panel) {
+                            panel.style.paddingTop = "0rem";
+                            panel.style.maxHeight = null;
+                        }
+                    }
+                }, this);
+
+                if (isActive) {
+                    window.location.href = this.href;
+                } else {
+                    this.classList.add("active");
+                    content.style.paddingTop = "1rem";
+                    content.style.maxHeight = content.scrollHeight + "px";
                 }
-            }, this);
-
-            if (isActive) {
-
-                window.location.href = this.href;
-            } else {
-                this.classList.add("active");
-                content.style.paddingTop = "1rem";
-                content.style.maxHeight = content.scrollHeight + "px";
+                let accContent = this.closest('.burger-modal-content');
+                if (accContent) {
+                    let newHeight = Array.from(accContent.querySelectorAll('.header__submenu'))
+                        .reduce((sum, panel) => sum + (panel.style.maxHeight ? panel.scrollHeight : 0), 0);
+                    accContent.style.height = newHeight + 'px';
+                }
             }
-
-            let accContent = this.closest('.burger-modal-content');
-            let newHeight = Array.from(accContent.querySelectorAll('.header__submenu'))
-                .reduce((sum, panel) => sum + (panel.style.maxHeight ? panel.scrollHeight : 0), 0);
-            accContent.style.height = newHeight + 'px';
         });
     }
 
