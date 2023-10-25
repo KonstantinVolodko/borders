@@ -1113,7 +1113,7 @@ svg {
     width: max-content;
     padding: 1rem;
     left: 0;
-    top: 3rem;
+    top: 2rem;
     -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
 }

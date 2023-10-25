@@ -275,41 +275,25 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    const menuButtons = document.querySelectorAll('.header__menu button');
+    const menuItems = document.querySelectorAll('.header__menu li');
 
-    menuButtons.forEach(button => {
-        button.addEventListener('click', (event) => {
-            event.stopPropagation(); // Остановить всплытие события, чтобы клик не срабатывал на документе
-            // Находим ближайший элемент с классом 'menu-item'
-            const menuItem = button.closest('li');
+    menuItems.forEach(menuItem => {
+        const button = menuItem.querySelector('button');
+        const submenu = menuItem.querySelector('.header__submenu');
 
-            // Закрываем все выпадающие меню, кроме текущего
-            menuButtons.forEach(otherButton => {
-                const otherMenuItem = otherButton.closest('li');
-                if (otherMenuItem !== menuItem) {
-                    otherMenuItem.classList.remove('active');
-                    const otherSubmenu = otherMenuItem.querySelector('.header__submenu');
-                    otherSubmenu.style.maxHeight = '0';
-                    otherSubmenu.style.opacity = '0';
-                }
-            });
-
-            // Переключаем активное состояние текущего элемента меню
-            menuItem.classList.toggle('active');
-
-            // Находим соответствующее подменю
-            const submenu = menuItem.querySelector('.header__submenu');
-
-            // Если меню активно, устанавливаем максимальную высоту и плавно изменяем прозрачность
-            if (menuItem.classList.contains('active')) {
+        if (submenu) { // Добавляем проверку на наличие submenu
+            menuItem.addEventListener('mouseenter', () => {
+                menuItem.classList.add('active');
                 submenu.style.maxHeight = submenu.scrollHeight + 'px';
                 submenu.style.opacity = '1';
-            } else {
-                // Если меню закрывается, то плавно скрываем и устанавливаем максимальную высоту обратно в 0
+            });
+
+            menuItem.addEventListener('mouseleave', () => {
+                menuItem.classList.remove('active');
                 submenu.style.maxHeight = '0';
                 submenu.style.opacity = '0';
-            }
-        });
+            });
+        }
     });
 
     // Обработчик события для закрытия меню при клике вне его
@@ -386,6 +370,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.style.paddingRight = '';
             document.body.style.overflow = '';
         }
+
     }
 
     const modalButtons = document.querySelectorAll('[data-modal-target]');
@@ -405,7 +390,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sendBtn.forEach(e => {
         e.addEventListener('click', (event) => {
             event.preventDefault();
-            
+
             document.querySelectorAll('.modal.open').forEach(modal => {
                 if (modal !== thanksModal.modal) {
                     modal.style.display = 'none';
@@ -431,35 +416,43 @@ document.addEventListener("DOMContentLoaded", () => {
                     this.changeTab(tabId);
                 });
             });
-
+    
             // Установка первой вкладки активной по умолчанию
             if (this.buttons.length > 0 && this.contents.length > 0) {
-                this.buttons[0].classList.add('--active');
-                this.contents[0].classList.add('--active');
-                this.contents[0].style.display = 'block';
+                const firstTabId = this.buttons[0].getAttribute('data-tab');
+                this.changeTab(firstTabId);
             }
         }
-
+    
         changeTab(tabId) {
             const activeContent = this.container.querySelector('.tab-content.--active');
-
+    
             if (activeContent) {
                 activeContent.addEventListener('transitionend', () => {
                     activeContent.style.display = 'none';
                 }, { once: true });
             }
-
+    
             // Удаляем класс active у всех кнопок и контента
             this.buttons.forEach(btn => btn.classList.remove('--active'));
             this.contents.forEach(content => content.classList.remove('--active'));
-
-            // Добавляем класс active нужной кнопке и контенту
+    
             const newActiveButton = this.container.querySelector(`ul .button[data-tab="${tabId}"]`);
-            const newActiveContent = this.container.querySelector(`#${tabId}`);
-
+            
             newActiveButton.classList.add('--active');
-            newActiveContent.classList.add('--active');
-            newActiveContent.style.display = 'block';
+    
+            // Если кнопка "Все типы перегородок" нажата, показываем весь контент
+            if (tabId === 'portfolio-tabs-1') {
+                this.contents.forEach(content => {
+                    content.classList.add('--active');
+                    content.style.display = 'block';
+                });
+            } else {
+                // Добавляем класс active нужному контенту
+                const newActiveContent = this.container.querySelector(`#${tabId}`);
+                newActiveContent.classList.add('--active');
+                newActiveContent.style.display = 'block';
+            }
         }
     }
 
