@@ -416,31 +416,31 @@ document.addEventListener("DOMContentLoaded", () => {
                     this.changeTab(tabId);
                 });
             });
-    
+
             // Установка первой вкладки активной по умолчанию
             if (this.buttons.length > 0 && this.contents.length > 0) {
                 const firstTabId = this.buttons[0].getAttribute('data-tab');
                 this.changeTab(firstTabId);
             }
         }
-    
+
         changeTab(tabId) {
             const activeContent = this.container.querySelector('.tab-content.--active');
-    
+
             if (activeContent) {
                 activeContent.addEventListener('transitionend', () => {
                     activeContent.style.display = 'none';
                 }, { once: true });
             }
-    
+
             // Удаляем класс active у всех кнопок и контента
             this.buttons.forEach(btn => btn.classList.remove('--active'));
             this.contents.forEach(content => content.classList.remove('--active'));
-    
+
             const newActiveButton = this.container.querySelector(`ul .button[data-tab="${tabId}"]`);
-            
+
             newActiveButton.classList.add('--active');
-    
+
             // Если кнопка "Все типы перегородок" нажата, показываем весь контент
             if (tabId === 'portfolio-tabs-1') {
                 this.contents.forEach(content => {
@@ -526,38 +526,38 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    let acc = document.querySelectorAll(".burger-modal-content .header__menu button");
+    let acc = document.querySelectorAll(".burger-modal-content .header__menu > li > a");
     let i;
 
-    for (let i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            let content = document.querySelector('.burger-modal-content');
-            let currentHeight = parseFloat(getComputedStyle(content).height); // текущая высота
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function (event) {
+            event.preventDefault();
 
-            for (let j = 0; j < acc.length; j++) {
-                if (acc[j] !== this) {
-                    let otherPanel = acc[j].nextElementSibling;
-                    acc[j].classList.remove("active");
-                    otherPanel.style.paddingTop = "0rem";
-                    otherPanel.style.maxHeight = null;
+            let content = this.nextElementSibling;
+            let isActive = this.classList.contains("active");
+
+            document.querySelectorAll('.burger-modal-content .header__menu > li > a').forEach(function (el) {
+                if (el !== this) {
+                    el.classList.remove("active");
+                    let panel = el.nextElementSibling;
+                    panel.style.paddingTop = "0rem";
+                    panel.style.maxHeight = null;
                 }
-            }
+            }, this);
 
-            this.classList.toggle("active");
-            let panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.paddingTop = "0rem";
-                panel.style.maxHeight = null;
-                currentHeight -= panel.scrollHeight; // вычитаем высоту панели, если она была открыта
+            if (isActive) {
+
+                window.location.href = this.href;
             } else {
-                panel.style.paddingTop = "1rem";
-                panel.style.maxHeight = panel.scrollHeight + "px";
-                document.querySelector('.burger-modal').style.backgroundColor = "var(--white)";
-                currentHeight += panel.scrollHeight; // добавляем высоту панели, если она была закрыта
+                this.classList.add("active");
+                content.style.paddingTop = "1rem";
+                content.style.maxHeight = content.scrollHeight + "px";
             }
 
-            // Обновляем общую высоту контента
-            content.style.height = currentHeight + 'px';
+            let accContent = this.closest('.burger-modal-content');
+            let newHeight = Array.from(accContent.querySelectorAll('.header__submenu'))
+                .reduce((sum, panel) => sum + (panel.style.maxHeight ? panel.scrollHeight : 0), 0);
+            accContent.style.height = newHeight + 'px';
         });
     }
 

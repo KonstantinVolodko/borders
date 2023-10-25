@@ -80,7 +80,7 @@
 
         .header__menu {
 
-            button {
+            a {
                 background-image: linear-gradient(to right,
                         var(--blue),
                         var(--blue) 50%,
@@ -362,7 +362,7 @@
     li {
         position: relative;
 
-        button {
+        a {
             background-image: linear-gradient(to right,
                     var(--black),
                     var(--black) 50%,
@@ -373,6 +373,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: all 0.3s ease-in-out;
+            font-size: 1.8rem;
+            font-weight: 500;
 
             &:hover {
                 background-position: 0;
@@ -497,7 +499,7 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 
     .header__menu {
-        button {
+        a {
             background-image: linear-gradient(to right,
                     var(--blue),
                     var(--blue) 50%,
@@ -550,7 +552,7 @@
         margin-left: 0rem;
 
 
-        button {
+        a {
             color: var(--black);
             font-size: 1.8rem;
             font-weight: 500;

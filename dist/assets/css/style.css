@@ -755,7 +755,7 @@ svg {
     background-position: 0;
 }
 
-.header.transparent .header__menu button {
+.header.transparent .header__menu a {
     background-image: linear-gradient(to right, var(--blue), var(--blue) 50%, var(--white) 50%);
     background-size: 200% 100%;
     background-position: 100%;
@@ -765,7 +765,7 @@ svg {
     transition: all 0.3s ease-in-out;
 }
 
-.header.transparent .header__menu button:hover {
+.header.transparent .header__menu a:hover {
     background-position: 0;
 }
 
@@ -1052,7 +1052,7 @@ svg {
     position: relative;
 }
 
-.header__menu li button {
+.header__menu li a {
     background-image: linear-gradient(to right, var(--black), var(--black) 50%, var(--white) 50%);
     background-size: 200% 100%;
     background-position: 100%;
@@ -1060,9 +1060,11 @@ svg {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
-.header__menu li button:hover {
+.header__menu li a:hover {
     background-position: 0;
 }
 
@@ -1180,7 +1182,7 @@ svg {
     transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-.burger-modal-content .header__menu button {
+.burger-modal-content .header__menu a {
     background-image: linear-gradient(to right, var(--blue), var(--blue) 50%, var(--black) 50%);
     background-size: 200% 100%;
     background-position: 100%;
@@ -1190,7 +1192,7 @@ svg {
     transition: all 0.3s ease-in-out;
 }
 
-.burger-modal-content .header__menu button:hover {
+.burger-modal-content .header__menu a:hover {
     background-position: 0;
 }
 
@@ -1233,7 +1235,7 @@ svg {
     margin-left: 0rem;
 }
 
-.burger-modal-content .header__menu button {
+.burger-modal-content .header__menu a {
     color: var(--black);
     font-size: 1.8rem;
     font-weight: 500;
