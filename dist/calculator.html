@@ -579,924 +579,804 @@
                 </button>
             </header>
             
-            <div class="bread-crumbs page-padding">
-                <a href="#">Главная</a>
-                <svg>
-                    <use href="#breadcrumbsArrow"></use>
-                </svg>
-                <p>Калькулятор</p>
-            </div>
-            
-            <div class="calculator__title page-padding-21">
-                <h1>Калькулятор</h1>
-                <p>Мы создали специально для Вас простой калькулятор, чтобы Вы могли узнать, сколько будет стоить перегородка.
-                    Давайте посчитаем прямо сейчас?</p>
-            
-                <ul>
-                    <li class="active">
-                        <div>
-                            <p>01.</p>
-                            <span>шаг</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <p>02.</p>
-                            <span>шаг</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <p>03.</p>
-                            <span>шаг</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <p>04.</p>
-                            <span>шаг</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="calculator page-padding-21">
-                <div class="calculator__tabs">
-                    <h2>Выберите тип перегородки</h2>
-                    <form action="#">
-                        <div class="calculator__tab-container" data-tab="tab_1">
-                            <h2>Выберите тип перегородки</h2>
-                            <ul>
-                                <li class="active">
-                                    <button>Стационарная, заполнение в 1 слой</button>
-                                    <div>
-                                        <img src="./assets/images/tab1Inner1.jpg" alt="#">
-                                    </div>
-                                </li>
-            
-                                <li>
-                                    <button>Стационарная, заполнение в 2 слоя</button>
-                                    <div>
-                                        <img src="./assets/images/tab1Inner2.jpg" alt="#">
-                                    </div>
-                                </li>
-            
-                                <li>
-                                    <button>Цельностеклянная</button>
-                                    <div>
-                                        <img src="./assets/images/tab1Inner1.jpg" alt="#">
-                                    </div>
-                                </li>
-            
-                                <li>
-                                    <button>Мобильная</button>
-                                    <div>
-                                        <img src="./assets/images/tab1Inner2.jpg" alt="#">
-                                    </div>
-                                </li>
-            
-                                <li>
-                                    <button>Сантехническая</button>
-                                    <div>
-                                        <img src="./assets/images/tab1Inner1.jpg" alt="#">
-                                    </div>
-                                </li>
-                            </ul>
-            
-                            <div class="calculator__tab-content">
-                                <img src="./assets/images/tab1Inner1.jpg" alt="#">
+            <div class="calculator">
+                <div class="calculator__wrap container">
+                    <div class="crumbs-hr"></div>
+                    <h1 class="page-title">Калькулятор</h1>
+                    <div class="calculator__content">
+                        <p>Мы создали специально для Вас простой калькулятор, чтобы Вы могли узнать, сколько будет стоить
+                            перегородка. Давайте посчитаем прямо сейчас?</p>
+                    </div>
+                    <div class="main-calc-form main-tabs">
+                        <div class="main-calc-form__steps calc-steps-list main-tabs__caption">
+                            <div class="calc-step step1 current">
+                                <div class="number">01.<span>шаг</span></div>
                             </div>
-            
-                            <input type="text" name="тип перегородки" class="hidden-helper-inp">
-                        </div>
-            
-                        <div class="calculator__tab-container" data-tab="tab_2" style="display: none;">
-                            <h2>Укажите размеры</h2>
-                            <div class="calculator__tab-sizes">
-                                <div class="calculator__tab-sizes-img-container">
-                                    <div>
-                                        <svg>
-                                            <use href="#secondTabBorder"></use>
-                                        </svg>
-                                    </div>
-                                    <svg class="calculator__tab-sizes-img-height">
-                                        <use href="#calcucalorHeight"></use>
-                                    </svg>
-                                </div>
-                                <svg class="calculator__tab-sizes-img-width">
-                                    <use href="#calcucalorWidth"></use>
-                                </svg>
+                            <div class="calc-step step2">
+                                <div class="number">02.<span>шаг</span></div>
                             </div>
-            
-                            <div class="calculator__tab-sizes-input">
-                                <div>
-                                    <p>Высота</p>
-                                    <input type="number" name="height">
-                                    <p>м</p>
-                                </div>
-            
-                                <div>
-                                    <p>Общая длина</p>
-                                    <input type="number" name="width">
-                                    <p>м</p>
-                                </div>
+                            <div class="calc-step step3">
+                                <div class="number">03.<span>шаг</span></div>
+                            </div>
+                            <div class="calc-step step4">
+                                <div class="number">04.<span>шаг</span></div>
                             </div>
                         </div>
+                        <div class="main-calc-form__content">
+                            <div class="main-calc-form__din-content">
+                                <section class="main-tabs__content step1 current" data-step="step1">
+                                    <div class="calc-title">Тип перегородки</div>
+                                    <div class="tabs">
+                                        <ul class="tabs__caption">
+                                            <li class="active" data-class="stac1-step2">Стационарная заполнение в 1 слой</li>
+                                            <li data-class="stac2-step2">Стационарная заполнение в 2 слоя</li>
+                                            <li data-class="stekl-step2">Цельностеклянная</li>
+                                            <li data-class="mob-step2">Мобильная</li>
+                                            <li data-class="santeh-step2">Сантехническая</li>
+                                        </ul>
+                                        <div class="tabs__content active"><img
+                                                src="./assets/images/kalkulyator-staczionarnyie-zapolnenie-v-1-sloj.jpg" alt="">
+                                        </div>
+                                        <div class="tabs__content"><img
+                                                src="./assets/images/kalkulyator-staczionarnyie-zapolnenie-v-2-sloya.jpg" alt="">
+                                        </div>
+                                        <div class="tabs__content"><img src="./assets/images/kalkulyator-czelnosteklyannyie.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="tabs__content"><img src="./assets/images/kalkulyator-mobilnyie.jpg" alt="">
+                                        </div>
+                                        <div class="tabs__content"><img src="./assets/images/santexnicheski.jpg" alt=""></div>
+                                    </div>
+                                </section>
+                                <section class="main-tabs__content stac1-step2" data-step="step2" data-class="stac1-step3">
+                                    <div class="calc-title">Размеры</div>
+                                    <div class="sizes">
+                                        <div class="sizes__top">
+                                            <div class="sizes__photo"><img src="./assets/images/peregorodka.png" alt=""></div>
+                                            <div class="sizes__height per-height">
+                                                <div class="per-height__svg"><svg width="40" height="302" viewBox="0 0 40 302"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg" style="fill:#DBDBDB">
+                                                        <rect x="40" y="3" width="40" height="3" transform="rotate(-180 40 3)">
+                                                        </rect>
+                                                        <rect x="40" y="302" width="40" height="3" transform="rotate(-180 40 302)">
+                                                        </rect>
+                                                        <path
+                                                            d="M20.3536 22.6465C20.1583 22.4512 19.8417 22.4512 19.6465 22.6465L16.4645 25.8284C16.2692 26.0237 16.2692 26.3403 16.4645 26.5355C16.6597 26.7308 16.9763 26.7308 17.1716 26.5355L20 23.7071L22.8284 26.5355C23.0237 26.7308 23.3403 26.7308 23.5355 26.5355C23.7308 26.3403 23.7308 26.0237 23.5355 25.8284L20.3536 22.6465ZM20.5 194L20.5 23L19.5 23L19.5 194L20.5 194Z">
+                                                        </path>
+                                                        <path
+                                                            d="M19.6465 279.354C19.8417 279.549 20.1583 279.549 20.3536 279.354L23.5355 276.172C23.7308 275.976 23.7308 275.66 23.5355 275.464C23.3403 275.269 23.0237 275.269 22.8284 275.464L20 278.293L17.1716 275.464C16.9763 275.269 16.6597 275.269 16.4645 275.464C16.2692 275.66 16.2692 275.976 16.4645 276.172L19.6465 279.354ZM19.5 194L19.5 279L20.5 279L20.5 194L19.5 194Z">
+                                                        </path>
+                                                    </svg>
             
-                        <div class="calculator__tab-container" data-tab="tab_3" style="display: none;">
-                            <h2>Выберите конфигурацию и материал</h2>
-                            <div class="calculator__tab-inner">
-                                <p>1. Выберите понравившуюся конструкцию Вашей перегородки</p>
-                                <div class="calculator__tab-inner-img">
-                                    <svg id="subtub_1" class="calculator__tab-inner-img">
-                                        <use href="#borderType1"></use>
-                                    </svg>
-            
-                                    <svg id="subtub_2" class="calculator__tab-inner-img">
-                                        <use href="#borderType2"></use>
-                                    </svg>
-            
-                                    <svg id="subtub_3" class="calculator__tab-inner-img">
-                                        <use href="#borderType3"></use>
-                                    </svg>
-                                </div>
-                            </div>
-            
-                            <div class="calculator__tab-subtab" data-tab="subtub_1" style="display: none;">
-                                <input type="text" name="monoblock">
-                                <div class="calculator__tab-subtab-main">
-                                    <p>2. Выберите секцию для заполнения</p>
-                                    <div class="calculator__tab-subtub-content">
-            
-                                        <div class="calculator__figure">
-                                            <div class="calculator__textarea-wrapper">
-                                                <textarea name="single" readonly></textarea>
-                                                <div class="calculator__textarea-wrapper-hidden">
-                                                    <p>3. Выберите материал</p>
-                                                    <div class="calculator__first-lvl-subtub">
-                                                        <div class="calculator__first-lvl-subtub-item">
-                                                            <div class="calculator__first-lvl-subtub-item-title">
-                                                                <span>Стекло</span>
-            
-                                                                <div>
-                                                                    <svg>
-                                                                        <use href="#calcularorArrow"></use>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                            <div class="calculator__second-lvl-subtub">
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Сырое
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Закаленное
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-            
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="calculator__first-lvl-subtub-item">
-                                                            <div class="calculator__first-lvl-subtub-item-title">
-                                                                <span>ЛДСП</span>
-            
-                                                                <div>
-                                                                    <svg>
-                                                                        <use href="#calcularorArrow"></use>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-            
-                                                            <div class="calculator__second-lvl-subtub">
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Деревянное
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Фанера
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-            
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                </div>
+                                                <div class="per-height__input">
+                                                    <label>Высота:</label>
+                                                    <div class="input">
+                                                        <input type="number"><span>м</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                        <div class="sizes__bottom per-length">
+                                            <div class="per-length__svg"><svg width="589" height="40" viewBox="0 0 589 40"
+                                                    xmlns="http://www.w3.org/2000/svg" style="fill:#DBDBDB">
+                                                    <rect x="3" width="40" height="3" transform="rotate(90 3 0)"></rect>
+                                                    <rect x="589" width="40" height="3" transform="rotate(90 589 0)"></rect>
+                                                    <path
+                                                        d="M566.707 20.7071C567.098 20.3166 567.098 19.6834 566.707 19.2929L560.343 12.929C559.953 12.5384 559.319 12.5384 558.929 12.929C558.538 13.3195 558.538 13.9526 558.929 14.3432L564.586 20L558.929 25.6569C558.538 26.0474 558.538 26.6806 558.929 27.0711C559.319 27.4616 559.953 27.4616 560.343 27.0711L566.707 20.7071ZM270 21L566 21L566 19L270 19L270 21Z">
+                                                    </path>
+                                                    <path
+                                                        d="M22.2929 19.2929C21.9024 19.6834 21.9024 20.3166 22.2929 20.7071L28.6569 27.0711C29.0474 27.4616 29.6805 27.4616 30.0711 27.0711C30.4616 26.6805 30.4616 26.0474 30.0711 25.6569L24.4142 20L30.0711 14.3431C30.4616 13.9526 30.4616 13.3195 30.0711 12.9289C29.6805 12.5384 29.0474 12.5384 28.6569 12.9289L22.2929 19.2929ZM270 19L23 19V21L270 21V19Z">
+                                                    </path>
+                                                </svg>
             
-                                <div class="calculator__tab-subtab-helper"></div>
-            
-                                <div class="calculator__tab-subtab-dors-count">
-                                    <p>4. Укажите количество дверей</p>
-                                    <div>
-                                        <input type="number" name="monoblock-dors-count">
-                                        <p>шт.</p>
-                                    </div>
-                                </div>
-                            </div>
-            
-                            <div class="calculator__tab-subtab" data-tab="subtub_2" style="display: none;">
-                                <input type="text" name="separateBottom">
-                                <div class="calculator__tab-subtab-main">
-                                    <p>2. Выберите секцию для заполнения</p>
-                                    <div class="calculator__tab-subtub-content">
-            
-                                        <div class="calculator__figure">
-                                            <div class="calculator__textarea-wrapper">
-                                                <textarea name="separateTopBig" readonly></textarea>
-                                                <div class="calculator__textarea-wrapper-hidden">
-                                                    <p>3. Выберите материал</p>
-                                                    <div class="calculator__first-lvl-subtub">
-                                                        <div class="calculator__first-lvl-subtub-item">
-                                                            <div class="calculator__first-lvl-subtub-item-title">
-                                                                <span>Стекло</span>
-            
-                                                                <div>
-                                                                    <svg>
-                                                                        <use href="#calcularorArrow"></use>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                            <div class="calculator__second-lvl-subtub">
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Сырое
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Закаленное
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-            
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="calculator__first-lvl-subtub-item">
-                                                            <div class="calculator__first-lvl-subtub-item-title">
-                                                                <span>ЛДСП</span>
-            
-                                                                <div>
-                                                                    <svg>
-                                                                        <use href="#calcularorArrow"></use>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-            
-                                                            <div class="calculator__second-lvl-subtub">
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Деревянное
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Фанера
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-            
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
+                                            <div class="per-length__input">
+                                                <label>Общая длина:</label>
+                                                <input type="number"><span>м</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="main-tabs__content stac2-step2" data-step="step2" data-class="stac2-step3">
+                                    <div class="calc-title">Размеры</div>
+                                    <div class="sizes">
+                                        <div class="sizes__top">
+                                            <div class="sizes__photo"><img src="./assets/images/peregorodka.png" alt=""></div>
+                                            <div class="sizes__height per-height">
+                                                <div class="per-height__svg"><svg width="40" height="302" viewBox="0 0 40 302"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg" style="fill:#DBDBDB">
+                                                        <rect x="40" y="3" width="40" height="3" transform="rotate(-180 40 3)">
+                                                        </rect>
+                                                        <rect x="40" y="302" width="40" height="3" transform="rotate(-180 40 302)">
+                                                        </rect>
+                                                        <path
+                                                            d="M20.3536 22.6465C20.1583 22.4512 19.8417 22.4512 19.6465 22.6465L16.4645 25.8284C16.2692 26.0237 16.2692 26.3403 16.4645 26.5355C16.6597 26.7308 16.9763 26.7308 17.1716 26.5355L20 23.7071L22.8284 26.5355C23.0237 26.7308 23.3403 26.7308 23.5355 26.5355C23.7308 26.3403 23.7308 26.0237 23.5355 25.8284L20.3536 22.6465ZM20.5 194L20.5 23L19.5 23L19.5 194L20.5 194Z">
+                                                        </path>
+                                                        <path
+                                                            d="M19.6465 279.354C19.8417 279.549 20.1583 279.549 20.3536 279.354L23.5355 276.172C23.7308 275.976 23.7308 275.66 23.5355 275.464C23.3403 275.269 23.0237 275.269 22.8284 275.464L20 278.293L17.1716 275.464C16.9763 275.269 16.6597 275.269 16.4645 275.464C16.2692 275.66 16.2692 275.976 16.4645 276.172L19.6465 279.354ZM19.5 194L19.5 279L20.5 279L20.5 194L19.5 194Z">
+                                                        </path>
+                                                    </svg>
             
-                                            <div class="calculator__textarea-wrapper">
-                                                <textarea name="separateBottomLittle" readonly></textarea>
-                                                <div class="calculator__textarea-wrapper-hidden">
-                                                    <p>3. Выберите материал</p>
-                                                    <div class="calculator__first-lvl-subtub">
-                                                        <div class="calculator__first-lvl-subtub-item">
-                                                            <div class="calculator__first-lvl-subtub-item-title">
-                                                                <span>Алюминий</span>
-            
-                                                                <div>
-                                                                    <svg>
-                                                                        <use href="#calcularorArrow"></use>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                            <div class="calculator__second-lvl-subtub">
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Сырое
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Закаленное
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-            
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="calculator__first-lvl-subtub-item">
-                                                            <div class="calculator__first-lvl-subtub-item-title">
-                                                                <span>Кирпич</span>
-            
-                                                                <div>
-                                                                    <svg>
-                                                                        <use href="#calcularorArrow"></use>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-            
-                                                            <div class="calculator__second-lvl-subtub">
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Деревянное
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Фанера
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-            
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                </div>
+                                                <div class="per-height__input">
+                                                    <label>Высота:</label>
+                                                    <div class="input">
+                                                        <input type="number"><span>м</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                        <div class="sizes__bottom per-length">
+                                            <div class="per-length__svg"><svg width="589" height="40" viewBox="0 0 589 40"
+                                                    xmlns="http://www.w3.org/2000/svg" style="fill:#DBDBDB">
+                                                    <rect x="3" width="40" height="3" transform="rotate(90 3 0)"></rect>
+                                                    <rect x="589" width="40" height="3" transform="rotate(90 589 0)"></rect>
+                                                    <path
+                                                        d="M566.707 20.7071C567.098 20.3166 567.098 19.6834 566.707 19.2929L560.343 12.929C559.953 12.5384 559.319 12.5384 558.929 12.929C558.538 13.3195 558.538 13.9526 558.929 14.3432L564.586 20L558.929 25.6569C558.538 26.0474 558.538 26.6806 558.929 27.0711C559.319 27.4616 559.953 27.4616 560.343 27.0711L566.707 20.7071ZM270 21L566 21L566 19L270 19L270 21Z">
+                                                    </path>
+                                                    <path
+                                                        d="M22.2929 19.2929C21.9024 19.6834 21.9024 20.3166 22.2929 20.7071L28.6569 27.0711C29.0474 27.4616 29.6805 27.4616 30.0711 27.0711C30.4616 26.6805 30.4616 26.0474 30.0711 25.6569L24.4142 20L30.0711 14.3431C30.4616 13.9526 30.4616 13.3195 30.0711 12.9289C29.6805 12.5384 29.0474 12.5384 28.6569 12.9289L22.2929 19.2929ZM270 19L23 19V21L270 21V19Z">
+                                                    </path>
+                                                </svg>
             
-                                <div class="calculator__tab-subtab-helper"></div>
-            
-                                <div class="calculator__tab-subtab-dors-count">
-                                    <p>4. Укажите количество дверей</p>
-                                    <div>
-                                        <input type="number" name="separateBottom-dors-count">
-                                        <p>шт.</p>
-                                    </div>
-                                </div>
-                            </div>
-            
-                            <div class="calculator__tab-subtab" data-tab="subtub_3" style="display: none;">
-                                <input type="text" name="separateTop">
-                                <div class="calculator__tab-subtab-main">
-                                    <p>2. Выберите секцию для заполнения</p>
-                                    <div class="calculator__tab-subtub-content">
-            
-                                        <div class="calculator__figure">
-                                            <div class="calculator__textarea-wrapper">
-                                                <textarea name="separateTopLittle" readonly></textarea>
-                                                <div class="calculator__textarea-wrapper-hidden">
-                                                    <p>3. Выберите материал</p>
-                                                    <div class="calculator__first-lvl-subtub">
-                                                        <div class="calculator__first-lvl-subtub-item">
-                                                            <div class="calculator__first-lvl-subtub-item-title">
-                                                                <span>Пластмасса</span>
-            
-                                                                <div>
-                                                                    <svg>
-                                                                        <use href="#calcularorArrow"></use>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                            <div class="calculator__second-lvl-subtub">
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Сырое
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Закаленное
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-            
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="calculator__first-lvl-subtub-item">
-                                                            <div class="calculator__first-lvl-subtub-item-title">
-                                                                <span>Камень</span>
-            
-                                                                <div>
-                                                                    <svg>
-                                                                        <use href="#calcularorArrow"></use>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-            
-                                                            <div class="calculator__second-lvl-subtub">
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Деревянное
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Фанера
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-            
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
+                                            <div class="per-length__input">
+                                                <label>Общая длина:</label>
+                                                <input type="number"><span>м</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="main-tabs__content mob-step2" data-step="step2" data-class="mob-step3">
+                                    <div class="calc-title">Размеры</div>
+                                    <div class="sizes">
+                                        <div class="sizes__top">
+                                            <div class="sizes__photo"><img src="./assets/images/peregorodka.png" alt=""></div>
+                                            <div class="sizes__height per-height">
+                                                <div class="per-height__svg"><svg width="40" height="302" viewBox="0 0 40 302"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg" style="fill:#DBDBDB">
+                                                        <rect x="40" y="3" width="40" height="3" transform="rotate(-180 40 3)">
+                                                        </rect>
+                                                        <rect x="40" y="302" width="40" height="3" transform="rotate(-180 40 302)">
+                                                        </rect>
+                                                        <path
+                                                            d="M20.3536 22.6465C20.1583 22.4512 19.8417 22.4512 19.6465 22.6465L16.4645 25.8284C16.2692 26.0237 16.2692 26.3403 16.4645 26.5355C16.6597 26.7308 16.9763 26.7308 17.1716 26.5355L20 23.7071L22.8284 26.5355C23.0237 26.7308 23.3403 26.7308 23.5355 26.5355C23.7308 26.3403 23.7308 26.0237 23.5355 25.8284L20.3536 22.6465ZM20.5 194L20.5 23L19.5 23L19.5 194L20.5 194Z">
+                                                        </path>
+                                                        <path
+                                                            d="M19.6465 279.354C19.8417 279.549 20.1583 279.549 20.3536 279.354L23.5355 276.172C23.7308 275.976 23.7308 275.66 23.5355 275.464C23.3403 275.269 23.0237 275.269 22.8284 275.464L20 278.293L17.1716 275.464C16.9763 275.269 16.6597 275.269 16.4645 275.464C16.2692 275.66 16.2692 275.976 16.4645 276.172L19.6465 279.354ZM19.5 194L19.5 279L20.5 279L20.5 194L19.5 194Z">
+                                                        </path>
+                                                    </svg>
             
-                                            <div class="calculator__textarea-wrapper">
-                                                <textarea name="separateBottomBig" readonly></textarea>
-                                                <div class="calculator__textarea-wrapper-hidden">
-                                                    <p>3. Выберите материал</p>
-                                                    <div class="calculator__first-lvl-subtub">
-                                                        <div class="calculator__first-lvl-subtub-item">
-                                                            <div class="calculator__first-lvl-subtub-item-title">
-                                                                <span>Волокно</span>
-            
-                                                                <div>
-                                                                    <svg>
-                                                                        <use href="#calcularorArrow"></use>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                            <div class="calculator__second-lvl-subtub">
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Сырое
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            5 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Закаленное
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-            
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            2 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="calculator__first-lvl-subtub-item">
-                                                            <div class="calculator__first-lvl-subtub-item-title">
-                                                                <span>Ткань</span>
-            
-                                                                <div>
-                                                                    <svg>
-                                                                        <use href="#calcularorArrow"></use>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-            
-                                                            <div class="calculator__second-lvl-subtub">
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Деревянное
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            1 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="calculator__second-lvl-subtub-item">
-                                                                    <div class="calculator__first-lvl-subtub-item-subtitle">
-                                                                        Фанера
-            
-                                                                        <div>
-                                                                            <svg>
-                                                                                <use href="#calcularorArrow"></use>
-                                                                            </svg>
-                                                                        </div>
-                                                                    </div>
-            
-                                                                    <div class="calculator__third-lvl-subtub">
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм прозрачное
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм матовое
-                                                                        </div>
-                                                                        <div class="calculator__third-lvl-subtub-item">
-                                                                            3 мм с жалюзи
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                </div>
+                                                <div class="per-height__input">
+                                                    <label>Высота:</label>
+                                                    <div class="input">
+                                                        <input type="number"><span>м</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                        <div class="sizes__bottom per-length">
+                                            <div class="per-length__svg"><svg width="589" height="40" viewBox="0 0 589 40"
+                                                    xmlns="http://www.w3.org/2000/svg" style="fill:#DBDBDB">
+                                                    <rect x="3" width="40" height="3" transform="rotate(90 3 0)"></rect>
+                                                    <rect x="589" width="40" height="3" transform="rotate(90 589 0)"></rect>
+                                                    <path
+                                                        d="M566.707 20.7071C567.098 20.3166 567.098 19.6834 566.707 19.2929L560.343 12.929C559.953 12.5384 559.319 12.5384 558.929 12.929C558.538 13.3195 558.538 13.9526 558.929 14.3432L564.586 20L558.929 25.6569C558.538 26.0474 558.538 26.6806 558.929 27.0711C559.319 27.4616 559.953 27.4616 560.343 27.0711L566.707 20.7071ZM270 21L566 21L566 19L270 19L270 21Z">
+                                                    </path>
+                                                    <path
+                                                        d="M22.2929 19.2929C21.9024 19.6834 21.9024 20.3166 22.2929 20.7071L28.6569 27.0711C29.0474 27.4616 29.6805 27.4616 30.0711 27.0711C30.4616 26.6805 30.4616 26.0474 30.0711 25.6569L24.4142 20L30.0711 14.3431C30.4616 13.9526 30.4616 13.3195 30.0711 12.9289C29.6805 12.5384 29.0474 12.5384 28.6569 12.9289L22.2929 19.2929ZM270 19L23 19V21L270 21V19Z">
+                                                    </path>
+                                                </svg>
             
-                                <div class="calculator__tab-subtab-helper"></div>
-            
-                                <div class="calculator__tab-subtab-dors-count">
-                                    <p>4. Укажите количество дверей</p>
-                                    <div>
-                                        <input type="number" name="separateTop-dors-count">
-                                        <p>шт.</p>
+                                            </div>
+                                            <div class="per-length__input">
+                                                <label>Общая длина:</label>
+                                                <input type="number"><span>м</span>
+                                            </div>
+                                        </div>
                                     </div>
+                                </section>
+                                <section class="main-tabs__content santeh-step2" data-step="step2" data-class="santeh-step3">
+                                    <div class="calc-title">Размеры</div>
+                                    <div class="sizes santeh">
+                                        <div class="sizes__top">
+                                            <div class="sizes__photo" id="santeh"><svg width="573" height="300"
+                                                    viewBox="0 0 573 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M572 300V1H1V300" stroke="#AEAEAE"></path>
+                                                    <rect x="6.5" y="6.5" width="140" height="199" stroke="#AEAEAE"></rect>
+                                                    <rect x="6" y="206" width="1" height="94" fill="#AEAEAE"></rect>
+                                                    <rect x="45" y="205.844" width="1" height="58.2344"
+                                                        transform="rotate(-57.5334 45 205.844)" fill="#AEAEAE"></rect>
+                                                    <rect x="185" y="205.844" width="1" height="58.2344"
+                                                        transform="rotate(-57.5334 185 205.844)" fill="#AEAEAE"></rect>
+                                                    <rect x="325" y="205.844" width="1" height="58.2344"
+                                                        transform="rotate(-57.5334 325 205.844)" fill="#AEAEAE"></rect>
+                                                    <rect x="465" y="205.844" width="1" height="58.2344"
+                                                        transform="rotate(-57.5334 465 205.844)" fill="#AEAEAE"></rect>
+                                                    <rect x="566" y="206" width="1" height="94" fill="#AEAEAE"></rect>
+                                                    <rect x="146.5" y="6.5" width="140" height="199" stroke="#AEAEAE"></rect>
+                                                    <path class="arrow"
+                                                        d="M136.424 15.5757C136.19 15.3414 135.81 15.3414 135.576 15.5757L131.757 19.3941C131.523 19.6284 131.523 20.0083 131.757 20.2426C131.992 20.477 132.372 20.477 132.606 20.2426L136 16.8485L139.394 20.2426C139.628 20.477 140.008 20.477 140.243 20.2426C140.477 20.0083 140.477 19.6284 140.243 19.3941L136.424 15.5757ZM136.6 121L136.6 16L135.4 16L135.4 121L136.6 121Z"
+                                                        fill="#AEAEAE"></path>
+                                                    <path class="arrow"
+                                                        d="M135.576 196.424C135.81 196.659 136.19 196.659 136.424 196.424L140.243 192.606C140.477 192.372 140.477 191.992 140.243 191.757C140.008 191.523 139.628 191.523 139.394 191.757L136 195.151L132.606 191.757C132.372 191.523 131.992 191.523 131.757 191.757C131.523 191.992 131.523 192.372 131.757 192.606L135.576 196.424ZM135.4 121L135.4 196L136.6 196L136.6 121L135.4 121Z"
+                                                        fill="#AEAEAE"></path>
+                                                    <path class="arrow"
+                                                        d="M276.424 15.5757C276.19 15.3414 275.81 15.3414 275.576 15.5757L271.757 19.3941C271.523 19.6284 271.523 20.0083 271.757 20.2426C271.992 20.477 272.372 20.477 272.606 20.2426L276 16.8485L279.394 20.2426C279.628 20.477 280.008 20.477 280.243 20.2426C280.477 20.0083 280.477 19.6284 280.243 19.3941L276.424 15.5757ZM276.6 121L276.6 16L275.4 16L275.4 121L276.6 121Z"
+                                                        fill="#AEAEAE"></path>
+                                                    <path class="arrow"
+                                                        d="M275.576 196.424C275.81 196.659 276.19 196.659 276.424 196.424L280.243 192.606C280.477 192.372 280.477 191.992 280.243 191.757C280.008 191.523 279.628 191.523 279.394 191.757L276 195.151L272.606 191.757C272.372 191.523 271.992 191.523 271.757 191.757C271.523 191.992 271.523 192.372 271.757 192.606L275.576 196.424ZM275.4 121L275.4 196L276.6 196L276.6 121L275.4 121Z"
+                                                        fill="#AEAEAE"></path>
+                                                    <path class="arrow"
+                                                        d="M416.424 15.5757C416.19 15.3414 415.81 15.3414 415.576 15.5757L411.757 19.3941C411.523 19.6284 411.523 20.0083 411.757 20.2426C411.992 20.477 412.372 20.477 412.606 20.2426L416 16.8485L419.394 20.2426C419.628 20.477 420.008 20.477 420.243 20.2426C420.477 20.0083 420.477 19.6284 420.243 19.3941L416.424 15.5757ZM416.6 121L416.6 16L415.4 16L415.4 121L416.6 121Z"
+                                                        fill="#AEAEAE"></path>
+                                                    <path class="arrow"
+                                                        d="M415.576 196.424C415.81 196.659 416.19 196.659 416.424 196.424L420.243 192.606C420.477 192.372 420.477 191.992 420.243 191.757C420.008 191.523 419.628 191.523 419.394 191.757L416 195.151L412.606 191.757C412.372 191.523 411.992 191.523 411.757 191.757C411.523 191.992 411.523 192.372 411.757 192.606L415.576 196.424ZM415.4 121L415.4 196L416.6 196L416.6 121L415.4 121Z"
+                                                        fill="#AEAEAE"></path>
+                                                    <rect x="286.5" y="6.5" width="140" height="199" stroke="#AEAEAE"></rect>
+                                                    <rect x="426.5" y="6.5" width="140" height="199" stroke="#AEAEAE"></rect>
+                                                    <line stroke-width="2" height="198" x1="146" y1="7" x2="147" y2="205"
+                                                        stroke="#AEAEAE"></line>
+                                                    <line stroke-width="2" height="198" x1="286" y1="7" x2="287" y2="205"
+                                                        stroke="#AEAEAE"></line>
+                                                    <line stroke-width="2" height="198" x1="426" y1="7" x2="427" y2="205"
+                                                        stroke="#AEAEAE"></line>
+                                                </svg>
+            
+                                            </div>
+                                            <div class="sizes__height per-height">
+                                                <div class="per-height__input">
+                                                    <label>Глубина кабинки:</label>
+                                                    <div class="input">
+                                                        <input class="height" type="number"><span>м</span>
+                                                    </div>
+                                                </div>
+                                                <div class="per-height__input">
+                                                    <label>Количество перпендикулярных стенок:</label>
+                                                    <div class="input">
+                                                        <input class="count" type="number"><span>шт</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sizes__bottom per-length" id="santeh">
+                                            <div class="per-length__svg"><svg width="589" height="40" viewBox="0 0 589 40"
+                                                    xmlns="http://www.w3.org/2000/svg" style="fill:#DBDBDB">
+                                                    <rect x="3" width="40" height="3" transform="rotate(90 3 0)"></rect>
+                                                    <rect x="589" width="40" height="3" transform="rotate(90 589 0)"></rect>
+                                                    <path
+                                                        d="M566.707 20.7071C567.098 20.3166 567.098 19.6834 566.707 19.2929L560.343 12.929C559.953 12.5384 559.319 12.5384 558.929 12.929C558.538 13.3195 558.538 13.9526 558.929 14.3432L564.586 20L558.929 25.6569C558.538 26.0474 558.538 26.6806 558.929 27.0711C559.319 27.4616 559.953 27.4616 560.343 27.0711L566.707 20.7071ZM270 21L566 21L566 19L270 19L270 21Z">
+                                                    </path>
+                                                    <path
+                                                        d="M22.2929 19.2929C21.9024 19.6834 21.9024 20.3166 22.2929 20.7071L28.6569 27.0711C29.0474 27.4616 29.6805 27.4616 30.0711 27.0711C30.4616 26.6805 30.4616 26.0474 30.0711 25.6569L24.4142 20L30.0711 14.3431C30.4616 13.9526 30.4616 13.3195 30.0711 12.9289C29.6805 12.5384 29.0474 12.5384 28.6569 12.9289L22.2929 19.2929ZM270 19L23 19V21L270 21V19Z">
+                                                    </path>
+                                                </svg>
+            
+                                            </div>
+                                            <div class="per-length__input">
+                                                <label>Общая длина перегородок:</label>
+                                                <input type="number"><span>м</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="main-tabs__content stekl-step2" data-step="step2" data-class="stekl-step3">
+                                    <div class="calc-title">Размеры</div>
+                                    <div class="sizes">
+                                        <div class="sizes__top">
+                                            <div class="sizes__photo"><img src="./assets/images/peregorodka-celnostekl.png" alt="">
+                                            </div>
+                                            <div class="sizes__height per-height">
+                                                <div class="per-height__svg"><svg width="40" height="302" viewBox="0 0 40 302"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg" style="fill:#DBDBDB">
+                                                        <rect x="40" y="3" width="40" height="3" transform="rotate(-180 40 3)">
+                                                        </rect>
+                                                        <rect x="40" y="302" width="40" height="3" transform="rotate(-180 40 302)">
+                                                        </rect>
+                                                        <path
+                                                            d="M20.3536 22.6465C20.1583 22.4512 19.8417 22.4512 19.6465 22.6465L16.4645 25.8284C16.2692 26.0237 16.2692 26.3403 16.4645 26.5355C16.6597 26.7308 16.9763 26.7308 17.1716 26.5355L20 23.7071L22.8284 26.5355C23.0237 26.7308 23.3403 26.7308 23.5355 26.5355C23.7308 26.3403 23.7308 26.0237 23.5355 25.8284L20.3536 22.6465ZM20.5 194L20.5 23L19.5 23L19.5 194L20.5 194Z">
+                                                        </path>
+                                                        <path
+                                                            d="M19.6465 279.354C19.8417 279.549 20.1583 279.549 20.3536 279.354L23.5355 276.172C23.7308 275.976 23.7308 275.66 23.5355 275.464C23.3403 275.269 23.0237 275.269 22.8284 275.464L20 278.293L17.1716 275.464C16.9763 275.269 16.6597 275.269 16.4645 275.464C16.2692 275.66 16.2692 275.976 16.4645 276.172L19.6465 279.354ZM19.5 194L19.5 279L20.5 279L20.5 194L19.5 194Z">
+                                                        </path>
+                                                    </svg>
+            
+                                                </div>
+                                                <div class="per-height__input">
+                                                    <label>Высота:</label>
+                                                    <div class="input">
+                                                        <input type="number"><span>м</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sizes__bottom per-length">
+                                            <div class="per-length__svg"><svg width="589" height="40" viewBox="0 0 589 40"
+                                                    xmlns="http://www.w3.org/2000/svg" style="fill:#DBDBDB">
+                                                    <rect x="3" width="40" height="3" transform="rotate(90 3 0)"></rect>
+                                                    <rect x="589" width="40" height="3" transform="rotate(90 589 0)"></rect>
+                                                    <path
+                                                        d="M566.707 20.7071C567.098 20.3166 567.098 19.6834 566.707 19.2929L560.343 12.929C559.953 12.5384 559.319 12.5384 558.929 12.929C558.538 13.3195 558.538 13.9526 558.929 14.3432L564.586 20L558.929 25.6569C558.538 26.0474 558.538 26.6806 558.929 27.0711C559.319 27.4616 559.953 27.4616 560.343 27.0711L566.707 20.7071ZM270 21L566 21L566 19L270 19L270 21Z">
+                                                    </path>
+                                                    <path
+                                                        d="M22.2929 19.2929C21.9024 19.6834 21.9024 20.3166 22.2929 20.7071L28.6569 27.0711C29.0474 27.4616 29.6805 27.4616 30.0711 27.0711C30.4616 26.6805 30.4616 26.0474 30.0711 25.6569L24.4142 20L30.0711 14.3431C30.4616 13.9526 30.4616 13.3195 30.0711 12.9289C29.6805 12.5384 29.0474 12.5384 28.6569 12.9289L22.2929 19.2929ZM270 19L23 19V21L270 21V19Z">
+                                                    </path>
+                                                </svg>
+            
+                                            </div>
+                                            <div class="per-length__input">
+                                                <label>Общая длина:</label>
+                                                <input type="number"><span>м</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="main-tabs__content santeh-step3" data-step="step3">
+                                    <div class="calc-title">Конфигурация и материалы</div>
+                                    <div class="count">
+                                        <div class="count__top">
+                                            <div class="count__photo"><img src="./assets/images/peregorodka-santeh-step3.png"
+                                                    alt=""></div>
+                                            <div class="count__input">
+                                                <label>Укажите количество дверей</label>
+                                                <div class="input">
+                                                    <input type="number"><span>шт</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="count__bottom"><span>Материал - ЛДСП 16 мм</span></div>
+                                    </div>
+                                </section>
+                                <section class="main-tabs__content stac1-step3" data-step="step3">
+                                    <div class="calc-title">Конфигурация и материалы</div>
+                                    <div class="materials">
+                                        <div class="materials__top">
+                                            <div class="img-item" id="type1"><svg width="141" height="200" viewBox="0 0 141 200"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                        <rect x="0.5" y="0.5" width="140" height="199" stroke="#AEAEAE"></rect>
+                                                        <rect x="5.5" y="5.5" width="130" height="189" stroke="#AEAEAE"></rect>
+                                                    </g>
+                                                </svg>
+            
+                                            </div>
+                                            <div class="img-item" id="type2"><svg width="141" height="200" viewBox="0 0 141 200"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                        <rect x="0.75" y="0.75" width="140" height="199" stroke="#AEAEAE"></rect>
+                                                        <rect x="5.75" y="5.75" width="130" height="134" stroke="#AEAEAE"></rect>
+                                                        <rect x="5.75" y="145.75" width="130" height="49" stroke="#AEAEAE"></rect>
+                                                    </g>
+                                                </svg>
+            
+                                                <div class="itempart itempart3">1 метр</div>
+                                            </div>
+                                            <div class="img-item" id="type3"><svg width="141" height="200" viewBox="0 0 141 200"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                        <rect x="140.5" y="199.5" width="140" height="199"
+                                                            transform="rotate(-180 140.5 199.5)" stroke="#AEAEAE"></rect>
+                                                        <rect x="135.5" y="194.5" width="130" height="134"
+                                                            transform="rotate(-180 135.5 194.5)" stroke="#AEAEAE"></rect>
+                                                        <rect x="135.5" y="54.5" width="130" height="49"
+                                                            transform="rotate(-180 135.5 54.5)" stroke="#AEAEAE"></rect>
+                                                    </g>
+                                                </svg>
+            
+                                                <div class="itempart itempart4">2 метра</div>
+                                            </div><span>1. Выберите понравившуюся конструкцию Вашей перегородки</span>
+                                        </div>
+                                        <div class="materials__bottom" style="display: none">
+                                            <div class="materials__bottom-left">
+                                                <span>2. Выберите секцию для заполнения</span>
+                                                <div class="per-type active" id="per-type1">
+                                                    <div class="full-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="per-type" id="per-type2">
+                                                    <div class="big-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+            
+                                                    </div>
+                                                    <div class="small-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="per-type" id="per-type3">
+                                                    <div class="small-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                    <div class="big-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="materials__bottom-center" style="display: none"><span>3. Выберите
+                                                    материал</span>
+                                                <ul class="materials-list">
+                                                    <li class="materials-list__item has-drop">Стекло
+                                                        <div class="icon-right"></div>
+                                                        <ul class="additional-list second-lvl">
+                                                            <li class="additional-list__item sub">Сырое
+                                                                <div class="icon"></div>
+                                                                <ul class="additional-list positioned">
+                                                                    <li class="additional-list__item" data-type-z="type1">5 мм
+                                                                        прозрачное</li>
+                                                                    <li class="additional-list__item" data-type-z="type2">5 мм
+                                                                        матовое</li>
+                                                                    <li class="additional-list__item" data-type-z="type6">5 мм с
+                                                                        жалюзи</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="additional-list__item sub">Закаленное
+                                                                <div class="icon"></div>
+                                                                <ul class="additional-list positioned">
+                                                                    <li class="additional-list__item" data-type-z="type3">5 мм
+                                                                        прозрачное</li>
+                                                                    <li class="additional-list__item" data-type-z="type4">5 мм
+                                                                        матовое</li>
+                                                                    <li class="additional-list__item" data-type-z="type7">5 мм с
+                                                                        жалюзи</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="materials-list__item" data-type-z="type5">ЛДСП</li>
+                                                </ul>
+                                            </div>
+                                            <div class="materials__bottom-right" style="display: none">
+                                                <label>4. Укажите количество дверей</label>
+                                                <div class="input">
+                                                    <input type="number"><span>шт.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="main-tabs__content stac2-step3" data-step="step3">
+                                    <div class="calc-title">Конфигурация и материалы</div>
+                                    <div class="materials">
+                                        <div class="materials__top">
+                                            <div class="img-item" id="type4">
+                                                <svg width="141" height="200" viewBox="0 0 141 200" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                        <rect x="0.5" y="0.5" width="140" height="199" stroke="#AEAEAE"></rect>
+                                                        <rect x="5.5" y="5.5" width="130" height="189" stroke="#AEAEAE"></rect>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="img-item" id="type5"><svg width="141" height="200" viewBox="0 0 141 200"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                        <rect x="0.75" y="0.75" width="140" height="199" stroke="#AEAEAE"></rect>
+                                                        <rect x="5.75" y="5.75" width="130" height="134" stroke="#AEAEAE"></rect>
+                                                        <rect x="5.75" y="145.75" width="130" height="49" stroke="#AEAEAE"></rect>
+                                                    </g>
+                                                </svg>
+            
+                                                <div class="itempart itempart3">1 метр</div>
+                                            </div>
+                                            <div class="img-item" id="type6"><svg width="141" height="200" viewBox="0 0 141 200"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                        <rect x="140.5" y="199.5" width="140" height="199"
+                                                            transform="rotate(-180 140.5 199.5)" stroke="#AEAEAE"></rect>
+                                                        <rect x="135.5" y="194.5" width="130" height="134"
+                                                            transform="rotate(-180 135.5 194.5)" stroke="#AEAEAE"></rect>
+                                                        <rect x="135.5" y="54.5" width="130" height="49"
+                                                            transform="rotate(-180 135.5 54.5)" stroke="#AEAEAE"></rect>
+                                                    </g>
+                                                </svg>
+            
+                                                <div class="itempart itempart4">2 метра</div>
+                                            </div><span>1. Выберите понравившуюся конструкцию Вашей перегородки</span>
+                                        </div>
+                                        <div class="materials__bottom" style="display: none">
+                                            <div class="materials__bottom-left">
+                                                <span>2. Выберите секцию для заполнения</span>
+                                                <div class="per-type active" id="per-type4">
+                                                    <div class="full-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="per-type" id="per-type5">
+                                                    <div class="big-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                    <div class="small-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="per-type" id="per-type6">
+                                                    <div class="small-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                    <div class="big-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="materials__bottom-center" style="display: none"><span>3. Выберите
+                                                    материал</span>
+                                                <ul class="materials-list">
+                                                    <li class="materials-list__item has-drop">Стекло
+                                                        <div class="icon-right"></div>
+                                                        <ul class="additional-list second-lvl">
+                                                            <li class="additional-list__item sub">Сырое
+                                                                <div class="icon"></div>
+                                                                <ul class="additional-list positioned">
+                                                                    <li class="additional-list__item" data-type-z="type1">5 мм
+                                                                        прозрачное</li>
+                                                                    <li class="additional-list__item" data-type-z="type2">5 мм
+                                                                        матовое</li>
+                                                                    <li class="additional-list__item" data-type-z="type6">5 мм с
+                                                                        жалюзи</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="additional-list__item sub">Закаленное
+                                                                <div class="icon"></div>
+                                                                <ul class="additional-list positioned">
+                                                                    <li class="additional-list__item" data-type-z="type3">5 мм
+                                                                        прозрачное</li>
+                                                                    <li class="additional-list__item" data-type-z="type4">5 мм
+                                                                        матовое</li>
+                                                                    <li class="additional-list__item" data-type-z="type7">5 мм с
+                                                                        жалюзи</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="materials-list__item" data-type-z="type5">ЛДСП</li>
+                                                </ul>
+                                            </div>
+                                            <div class="materials__bottom-right" style="display: none">
+                                                <label>4. Укажите количество дверей</label>
+                                                <div class="input">
+                                                    <input type="number"><span>шт.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="main-tabs__content stekl-step3" data-step="step3">// Цельностеклянные Конфигурация и
+                                    материалы
+                                    <div class="calc-title">Конфигурация и материалы</div>
+                                    <div class="materials">
+                                        <div class="materials__top one-option">
+                                            <div class="materials__top-choose-type">
+                                                <div class="img-item active" id="type1"><svg width="141" height="200" fill="none"
+                                                        viewBox="0 0 141 200" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect x="0.75" y="0.75" width="139.5" height="198.5" stroke="#AEAEAE"
+                                                            stroke-width="1.5"></rect>
+                                                        <rect x="5.75" y="5.75" width="129.5" height="188.5" stroke="#AEAEAE"
+                                                            stroke-width="1.5"></rect>
+                                                    </svg>
+            
+                                                </div><span>Доступная конструкция</span>
+                                            </div>
+                                            <div class="materials__top-input">
+                                                <label>Укажите количество дверей</label>
+                                                <div class="input">
+                                                    <input type="number"><span>шт.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="materials__bottom">
+                                            <div class="materials__bottom-left">
+                                                <div class="per-type active" id="per-type1">
+                                                    <div class="full-part part active">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="materials__bottom-center"><span>Выберите заполнение</span>
+                                                <ul class="materials-list">
+                                                    <li class="materials-list__item">Стекло 10 мм
+                                                        <div class="icon-right"></div>
+                                                        <ul class="additional-list second-lvl">
+                                                            <li class="additional-list__item" type="1">Прозрачное закаленное</li>
+                                                            <li class="additional-list__item" type="2">Матовое закаленное</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="main-tabs__content mob-step3" data-step="step3">// Мобильные Конфигурация и
+                                    материалы
+                                    <div class="calc-title">Конфигурация и материалы</div>
+                                    <div class="materials">
+                                        <div class="materials__top">
+                                            <div class="img-item" id="type1">
+                                                <svg width="141" height="200" viewBox="0 0 141 200" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                        <rect x="0.5" y="0.5" width="140" height="199" stroke="#AEAEAE"></rect>
+                                                        <rect x="5.5" y="5.5" width="130" height="189" stroke="#AEAEAE"></rect>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="img-item" id="type2">
+                                                <svg width="141" height="200" viewBox="0 0 141 200" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                        <rect x="0.75" y="0.75" width="140" height="199" stroke="#AEAEAE"></rect>
+                                                        <rect x="5.75" y="5.75" width="130" height="134" stroke="#AEAEAE"></rect>
+                                                        <rect x="5.75" y="145.75" width="130" height="49" stroke="#AEAEAE"></rect>
+                                                    </g>
+                                                </svg>
+            
+                                                <div class="itempart itempart1">2/3</div>
+                                                <div class="itempart itempart2">1/3</div>
+                                            </div>
+                                            <div class="img-item" id="type3"><svg width="141" height="200" viewBox="0 0 141 200"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.5">
+                                                        <rect x="140.5" y="199.5" width="140" height="199"
+                                                            transform="rotate(-180 140.5 199.5)" stroke="#AEAEAE"></rect>
+                                                        <rect x="135.5" y="194.5" width="130" height="134"
+                                                            transform="rotate(-180 135.5 194.5)" stroke="#AEAEAE"></rect>
+                                                        <rect x="135.5" y="54.5" width="130" height="49"
+                                                            transform="rotate(-180 135.5 54.5)" stroke="#AEAEAE"></rect>
+                                                    </g>
+                                                </svg>
+            
+                                                <div class="itempart itempart1">2/3</div>
+                                                <div class="itempart itempart2">1/3</div>
+                                            </div><span>1. Выберите понравившуюся конструкцию Вашей перегородки</span>
+                                        </div>
+                                        <div class="materials__bottom" style="display: none">
+                                            <div class="materials__bottom-left">
+                                                <span>2. Выберите секцию для заполнения</span>
+                                                <div class="per-type active" id="per-type1">
+                                                    <div class="full-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="per-type" id="per-type2">
+                                                    <div class="big-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                    <div class="small-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="per-type" id="per-type3">
+                                                    <div class="small-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                    <div class="big-part part">
+                                                        <div class="icon-plus"></div>
+                                                        <div class="result"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="materials__bottom-center" style="display: none"><span>3. Выберите
+                                                    материал</span>
+                                                <ul class="materials-list">
+                                                    <li class="materials-list__item has-drop">Стекло
+                                                        <div class="icon-right"></div>
+                                                        <ul class="additional-list">
+                                                            <li class="additional-list__item sub">Сырое
+                                                                <div class="icon"></div>
+                                                                <ul class="additional-list positioned">
+                                                                    <li class="additional-list__item" data-type-z="type1">5 мм
+                                                                        прозрачное</li>
+                                                                    <li class="additional-list__item" data-type-z="type2">5 мм
+                                                                        матовое</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="additional-list__item sub">Закаленное
+                                                                <div class="icon"></div>
+                                                                <ul class="additional-list positioned">
+                                                                    <li class="additional-list__item" data-type-z="type3">5 мм
+                                                                        прозрачное</li>
+                                                                    <li class="additional-list__item" data-type-z="type4">5 мм
+                                                                        матовое</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="materials-list__item" data-type-z="type5">ЛДСП</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="main-tabs__content step4" data-step="step4">
+                                    <div class="calc-title">Итого</div>
+                                    <div class="prices">
+                                        <div class="prices__item">
+                                            <div class="title">Монтаж перегородок (м2) в т.ч. двери (шт)</div>
+                                            <div class="value">94 399 RUB</div>
+                                        </div>
+                                        <div class="prices__item">
+                                            <div class="title">Доставка, разгрузка, монтажные работы</div>
+                                            <div class="value">7 000 RUB</div>
+                                        </div>
+                                        <div class="prices__total"><span>Итоговая сумма</span>
+                                            <div class="value">118 359 RUB</div>
+                                            <div class="note">Расчет имеет приблизительный характер. Для получения точного расчета
+                                                обратитесь к менеджеру</div>
+                                        </div>
+                                    </div>
+                                    <form action="" method="post" class="ajax_form af_example" id="calc-form">
+                                        <input type="text" style="position: absolute; left: -9999px; top: -99999px;"
+                                            name="work-email" value="">
+                                        <input type="hidden" name="nospam:blank" value="">
+                                        <input type="hidden" name="calc" value="1">
+                                        <input type="hidden" name="type-form" value="calc">
+                                        <input type="hidden" name="yacook" value="">
+                                        <div class="order">
+                                            <div class="calc-title">Оформить заявку</div>
+                                            <div class="order__list">
+                                                <input class="order__input" type="text" placeholder="Имя" name="name">
+                                                <input class="order__input" type="tel" placeholder="Телефон" id="phone4"
+                                                    name="phone">
+                                                <input class="order__input" type="mail" placeholder="E-mail" name="email">
+                                            </div>
+                                            <span>Нажимая на кнопку “Оформить заявку” вы даете согласие на обработку персональных
+                                                данных</span>
+            
+                                        </div>
+                                        <div class="order__btn">
+                                            <button class="yl-btn" type="submit">Оформить заявку</button>
+                                        </div>
+            
+                                        <input type="hidden" name="af_action" value="a514f1c853bc4c4f0ec8a7512f69dd2a">
+                                    </form>
+                                    <div class="hidden main-message" id="calc-form-mess"></div>
+                                </section>
+                                <div class="main-calc-form__actions">
+                                    <button class="bb-btn step-back disabled">Назад</button>
+                                    <button class="b-btn step1">Дальше</button>
                                 </div>
+                            </div>
+                            <div class="main-calc-form__stat-content">
+                                <form action="" method="post" class="ajax_form af_example cf-connect" id="callback-calc-form">
+                                    <input type="text" style="position: absolute; left: -9999px; top: -99999px;" name="work-email"
+                                        value="">
+                                    <input type="hidden" name="nospam:blank" value="">
+                                    <input type="hidden" name="callback-calc" value="1">
+                                    <input type="hidden" name="type-form" value="calc-help">
+                                    <input type="hidden" name="yacook" value="">
+                                    <div class="cf-connect__title">Нужна помощь в рассчетах?</div>
+                                    <div class="cf-connect__subtitle">Закажите обратный звонок</div>
+                                    <input class="cf-connect__input" type="text" placeholder="Имя" name="name">
+                                    <input class="cf-connect__input" type="tel" id="phone3" placeholder="Телефон" name="phone">
+                                    <span>Нажимая на кнопку “Заказать расчет” вы даете согласие на обработку персональных
+                                        данных</span>
+                                    <div class="f-connect__btn">
+                                        <button class="yl-btn" type="submit">Заказать расчет</button>
+                                    </div>
+                                </form>
+                                <div class="hidden main-message" id="callback-calc-form-mess"></div>
                             </div>
                         </div>
-            
-                        <div class="calculator__tab-container" data-tab="tab_4" style="display: none;">
-                            <h2></h2>
-            
-                            <div class="calculator__tab-result">
-                                <h3>Итого</h3>
-                                    
-                                <ul>
-                                    <li>
-                                        <p>Материалы для перегородок (8.1 м2)</p>
-                                        <p>145218.20 RUB</p>
-                                    </li>
-                                    <li>
-                                        <p>Материалы для перегородок (8.1 м2)</p>
-                                        <p>145218.20 RUB</p>
-                                    </li>
-                                    <li>
-                                        <p>Материалы для перегородок (8.1 м2)</p>
-                                        <p>145218.20 RUB</p>
-                                    </li>
-                                </ul>
-            
-                                <div class="calculator__tab-result-container">
-                                    <div class="calculator__tab-result-price">
-                                        <p>Итоговая сумма</p>
-                                        <p>166474.20 RUB</p>
-                                    </div>
-            
-                                    <p>Расчет имеет приблизительный характер. Для получения точного расчета обратитесь к менеджеру</p>
-                                </div>
-                            </div>
-            
-                            <div class="calculator__tab-order-form">
-                                <h3>Оформить заявку</h3>
-            
-                                <div class="calculator__tab-order-form-inputs">
-                                    <input type="text" placeholder="Имя" required>
-                                    <input type="tel" placeholder="Телефон" required>
-                                    <input type="email" placeholder="Email">
-                                </div>
-            
-                                <div class="calculator__tab-order-form-button">
-                                    <p>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</p>
-                                    <button type="submit" class="button --active send" data-modal-target="#thanks-modal">Оформить заявку</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-            
-                    <div class="calculator__buttons">
-                        <button>
-                            <svg>
-                                <use href="#calcularorArrow"></use>
-                            </svg>
-                            Назад
-                        </button>
-            
-                        <button>
-                            Дальше
-                            <svg>
-                                <use href="#calcularorArrow"></use>
-                            </svg>
-                        </button>
                     </div>
                 </div>
-            
-                <div class="calculator__help">
-                    <form action="#">
-                        <p>Нужна помощь в рассчетах?</p>
-                        <p>Закажите обратный звонок</p>
-            
-                        <input type="text" name="name" placeholder="Имя">
-                        <input type="tel" name="phone" placeholder="Телефон">
-            
-                        <label>Нажимая на кнопку «Заказать звонок», вы даёте согласие на обработку персональных данных</label>
-            
-                        <button type="submit" data-modal-target="#thanks-modal" class="send">Заказать расчет</button>
-                    </form>
-                </div>
             </div>
             
-            <div class="repulsion-margin"></div>
             
             <footer class="footer page-padding">
                 <a href="#" class="header__logo">

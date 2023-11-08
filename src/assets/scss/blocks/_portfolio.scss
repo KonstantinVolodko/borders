@@ -22,12 +22,14 @@
 .portfolio__item {
 
     &:first-of-type {
-        margin-top: 4rem;
+        margin-top: 10rem;
 
         @include breakpoint($sm-bp) {
-            margin-top: 2rem;
+            margin-top: 4rem;
         }
     }
+
+
 }
 
 .portfilio__title-container {
@@ -162,17 +164,9 @@
 }
 
 .tab-content {
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transform: scale(0.9);
-    transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-  
-  .tab-content.--active {
-    max-height: 1000px; /* Установите достаточно большое значение */
-    opacity: 1;
-    transform: scale(1);
-  }
+    display: none;
+}
+
+.tab-content.--active {
+    display: block;
+}
